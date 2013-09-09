@@ -1,0 +1,29 @@
+//
+// Prefix header for all source files of the 'GoShop' target in the 'GoShop' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Global.h"
+
+#ifdef DEBUG
+#define ERROR_AND_STOP NSLog(@"禁止使用%s|||%d",__PRETTY_FUNCTION__,__LINE__); \
+        assert(0);
+#else
+#define ERROR_AND_STOP
+#endif
+
+#define ALERT_SHOWINFO(tempMessage) [[[UIAlertView alloc] initWithTitle:@"结果" \
+                                                    message:tempMessage \
+                                                   delegate:nil \
+                                          cancelButtonTitle:@"确定" \
+                                          otherButtonTitles:nil] show]; \
+
+#endif
