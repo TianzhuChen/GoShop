@@ -945,7 +945,6 @@
 		FC823CD6176454C70056CCAF = {
 			isa = PBXGroup;
 			children = (
-				FC2D1F2217D88F1B00B62528 /* libicucore.dylib */,
 				FC823D05176455030056CCAF /* libs */,
 				FC823D06176455030056CCAF /* Resources */,
 				FC823CE8176454C70056CCAF /* GoShop */,
@@ -965,6 +964,7 @@
 		FC823CE1176454C70056CCAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC2D1F2217D88F1B00B62528 /* libicucore.dylib */,
 				FC26C3EA17C76C1D000BBEF5 /* libz.1.1.3.dylib */,
 				B429919B17C0A2B600F7C7F6 /* CoreText.framework */,
 				FC350CAD1794FB3800F19B50 /* CFNetwork.framework */,

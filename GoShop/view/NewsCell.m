@@ -70,11 +70,16 @@ static UIImage *bgImage;//背景图片
     weiboData=data;
 //    userScreenNameLabel.text=[[data objectForKey:@"user"] valueForKey:@"screen_name"];
 //    userWeiboContent.text=[data objectForKey:@"text"];
-    [userProfileImage setImageWithURL:[NSURL URLWithString:weiboData.profileImageUrl]];
+
 //    userWeiboContentRect.size.height=[weiboData.weiboContent sizeWithFont:[UIFont systemFontOfSize:12]
 //                                     constrainedToSize:labelSize
 //                                         lineBreakMode:NSLineBreakByWordWrapping].height;
-    [self setNeedsDisplay];
+//   [self setNeedsDisplay];
+}
+-(void)updateCellImage
+{
+    [userProfileImage setImageWithURL:[NSURL URLWithString:weiboData.profileImageUrl]];
+     
 }
 -(void)drawRect:(CGRect)rect
 {

@@ -100,6 +100,7 @@
 -(void)switchPreviousCompleted:(SwitchMoveInfo)moveInfo{
     [ViewControllerManager sharedInstance].currentController=self.horizontalPreviousController;
 }
+#pragma mark -
 #pragma mark UITableView delegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -119,6 +120,18 @@
     [cell showWeibo:dataControl.weiboData[indexPath.row]];
     return cell;
 }
+//滚动结束以后，更新可见cell部分的图片
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if(!decelerate)
+    {
+        [self updateTableVisibleCellImage];
+    }
+}
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self updateTableVisibleCellImage];
+}
 #pragma mark -
 -(void)dealloc
 {
@@ -126,5 +139,14 @@
                      forKeyPath:@"weiboData"
                         context:NULL];
 }
-
+//更新可见cell的图片（主要涉及到外部加载的），这样可以显著增加table滚动时的流畅性
+-(void)updateTableVisibleCellImage
+{
+        NSArray *visiblePaths = [self.tableView indexPathsForVisibleRows];
+        for (NSIndexPath *indexPath in visiblePaths)
+        {
+            NewsCell *cell=(NewsCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+            [cell updateCellImage];
+        }
+}
 @end

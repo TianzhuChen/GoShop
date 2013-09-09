@@ -13,7 +13,6 @@
 }
 
 @end
-//CGFloat const topEdge=10;//顶部边距
 @implementation NewsWeiboData
 @synthesize weiboContent,screenName,createTime,frameRefCache,contentHeight,faceImages;
 
@@ -36,7 +35,7 @@ static CGSize labelSize;
     contentHeight=[weiboContent sizeWithFont:[UIFont systemFontOfSize:12]
                            constrainedToSize:labelSize
                                lineBreakMode:NSLineBreakByWordWrapping].height;
-    [self getFaceImage:content];
+    content=[self getFaceImage:content];
     
     //行缩进
     CGFloat screennameLineindentValue=45.0f;
@@ -78,6 +77,7 @@ static CGSize labelSize;
                                  range:NSMakeRange(screenName.length+1, 3)];
     
 //    NSDictionary *dic=@{@"width":@20,@"height":@20,@"descent":@0};
+    //设置表情图片的ctrun
     CTRunDelegateCallbacks delegateCallBacks=getCtrunDelegateCallback();
     for(NSDictionary *dic in faceImageRangeArr)
     {
@@ -88,7 +88,7 @@ static CGSize labelSize;
         [createTimeAttributed addAttribute:CFBridgingRelease(kCTRunDelegateAttributeName)
                                      value:CFBridgingRelease(runDelegateRef)
                                      range:range];
-        NSLog(@"contentsssss>>>%@",content);
+//        NSLog(@"contentsssss>>>%@",content);
     }
     
     
@@ -103,7 +103,7 @@ static CGSize labelSize;
     frameRefCache=CTFramesetterCreateFrame(framesetter, CFRangeMake(0, 0), path, NULL);
     CFRelease(path);
     CFRelease(framesetter);
-    
+    //计算表情图片的具体位置
     [self getFaceImageRect:frameRefCache];
     
     _haveCached=YES;
@@ -125,6 +125,8 @@ CTParagraphStyleSetting getParagrafSeeting(const void* value,CTParagraphStyleSpe
     paragrafSetting.valueSize=sizeof(float);
     return paragrafSetting;
 }
+#pragma mark CTRunCallBacks
+//创建一个特定的ctrun回调
 CTRunDelegateCallbacks getCtrunDelegateCallback()
 {
     CTRunDelegateCallbacks delegateCallBacks;
@@ -149,34 +151,40 @@ static CGFloat descentCallback( void *ref ){
 static CGFloat widthCallback( void* ref ){
     return [(NSString*)[(__bridge NSDictionary*)ref objectForKey:keyFaceImageWidth] floatValue];
 }
-//计算图片位置
-//void getFaceImage(NSString *content,CTFrameRef frame)
-
--(void)getFaceImage:(NSString **)contents
+#pragma mark -
+#pragma mark 计算表情索引位置和具体位置
+//计算表情图片索引位置
+-(NSString *)getFaceImage:(NSString *)contents
 {
-//    NSLog(@"conet>>>>%@",content);
-    NSString *content=contents;
-    NSRange range=[content rangeOfRegex:@"脏话"];
-    if(range.location!=NSNotFound)
-    {
-       
-        
-       
-        if(!faceImageRangeArr)
+    NSRange range=NSMakeRange(0, 0);
+    //循环查找表情
+    while (YES) {
+//        range=[contents rangeOfRegex:@"\\[.{2}\\]"];
+        range=[contents rangeOfRegex:@"\\[.{2}\\]" inRange:NSMakeRange(range.location+range.length, contents.length-range.location-range.length)];
+        if(range.location!=NSNotFound)
         {
-            faceImageRangeArr=[[NSMutableArray alloc] init];
+            if(!faceImageRangeArr)
+            {
+                faceImageRangeArr=[[NSMutableArray alloc] init];
+            }
+            range.length=range.length;
+            contents=[contents stringByReplacingCharactersInRange:range withString:@" "];
+            range.length=1;
+            NSDictionary *dic=@{keyFaceImageWidth:@23,
+                                keyFaceImageHeight:@23,
+                                keyFaceImageDescent:@5,
+                                keyFaceImageRange:[NSValue valueWithRange:range]};
+            
+            [faceImageRangeArr addObject:dic];
+        }else
+        {
+            break;
         }
-        content=[content stringByReplacingCharactersInRange:range withString:@"h"];
-        NSLog(@"faceContent>>>%@\n%@",[content substringWithRange:range],content);
-        range.length=1;
-        NSDictionary *dic=@{keyFaceImageWidth:@23,
-                            keyFaceImageHeight:@23,
-                            keyFaceImageDescent:@5,
-                            keyFaceImageRange:[NSValue valueWithRange:range]};
-         
-        [faceImageRangeArr addObject:dic];
     }
+
+    return contents;
 }
+//根据最终布局，计算表情图片绘制的具体位置
 -(void)getFaceImageRect:(CTFrameRef)frameRef
 {
     if(faceImageRangeArr.count>0)
@@ -233,14 +241,16 @@ static CGFloat widthCallback( void* ref ){
                 }
             }
             
-            NSLog(@"origins>>>>%f",origins[lineIndex].y);
+//            NSLog(@"origins>>>>%f",origins[lineIndex].y);
             lineIndex++;
             
         }
-        NSLog(@"lines>>>%d",lineIndex);
+//        NSLog(@"lines>>>%d",lineIndex);
         faceImages=[NSArray arrayWithArray:arr];
         [arr removeAllObjects];
         arr=nil;
     }
+    [faceImageRangeArr removeAllObjects];
+    faceImageRangeArr=nil;
 }
 @end

@@ -14,15 +14,13 @@
 @interface NewsCell : UITableViewCell
 {
     UIImageView *userProfileImage;
-    UILabel *userScreenNameLabel;
-//    UILabel *userWeiboContent;
     __weak NewsWeiboData *weiboData;
     CGRect userWeiboContentRect;
     CGRect userScreenNameRect;
     CGRect userWeiboTimeRect;
 }
-//-(void)showAnimation;
-//-(void)hideAnimation;
 -(void)showWeibo:(NewsWeiboData *)data;
+//更新下载cell当中的图片
+-(void)updateCellImage;
 +(CGFloat)getCellHeight:(NewsWeiboData *)data;//根据内容获取cell的高度
 @end
