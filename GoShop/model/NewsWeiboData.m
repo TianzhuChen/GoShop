@@ -64,7 +64,7 @@ static CGSize labelSize;
                                      range:range];
     }
     [createTimeAttributed addAttribute:CFBridgingRelease(kCTFontAttributeName)
-                                 value:CFBridgingRelease(CTFontCreateWithName(CFBridgingRetain([UIFont systemFontOfSize:12].fontName), 12, NULL))
+                                 value:CFBridgingRelease(CTFontCreateWithName((__bridge CFTypeRef)([UIFont systemFontOfSize:12].fontName), 12, NULL))
                                  range:range];
     [createTimeAttributed addAttribute:CFBridgingRelease(kCTParagraphStyleAttributeName)
                                  value:(__bridge id)(screennameLineParagraphStyle)
@@ -75,7 +75,6 @@ static CGSize labelSize;
     [createTimeAttributed addAttribute:CFBridgingRelease(kCTParagraphStyleAttributeName)
                                  value:CFBridgingRelease(createtimeLineParagraphStyle)
                                  range:NSMakeRange(screenName.length+1, 3)];
-    
 //    NSDictionary *dic=@{@"width":@20,@"height":@20,@"descent":@0};
     //设置表情图片的ctrun
     CTRunDelegateCallbacks delegateCallBacks=getCtrunDelegateCallback();
@@ -92,7 +91,7 @@ static CGSize labelSize;
     }
     
     
-    CTFramesetterRef framesetter=CTFramesetterCreateWithAttributedString(CFBridgingRetain(createTimeAttributed));
+    CTFramesetterRef framesetter=CTFramesetterCreateWithAttributedString((__bridge CFTypeRef)(createTimeAttributed));
     CGSize size= CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRangeMake(0,0), NULL, CGSizeMake(300, 2000), NULL );
 //    NSLog(@"size.>>>>%@",NSStringFromCGSize(size));
     CGMutablePathRef path=CGPathCreateMutable();
@@ -139,8 +138,8 @@ CTRunDelegateCallbacks getCtrunDelegateCallback()
 }
 /*CTRunDelegateCallbacks Callbacks */
 static void deallocCallback( void* ref ){
-    NSDictionary *dic=(__bridge NSDictionary *)ref;
-    dic=nil;
+//    NSDictionary *dic=(__bridge NSDictionary *)ref;
+//    dic=nil;
 }
 static CGFloat ascentCallback( void *ref ){
     return [(NSString*)[(__bridge NSDictionary*)ref objectForKey:keyFaceImageHeight] floatValue];
