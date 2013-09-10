@@ -31,7 +31,7 @@
     if([AccountControl sharedAccount].isLogined)
     {
         NSURLRequest *request=[[AccountControl sharedAccount].weiboControl getRequestWithWeiboFriends];
-        request=nil;
+//        request=nil;
         if(request)
         {
             [NSURLConnection connectionWithRequest:request

@@ -61,7 +61,7 @@ bool havedInitUI=false;
     //        NSLog(@"sP>>%@||cP>>%@||eP>>%@",NSStringFromCGPoint(startP),NSStringFromCGPoint(controlP),NSStringFromCGPoint(endP))    ;
     CGContextFillPath(faceRef);
     UIImage *faceImg=UIGraphicsGetImageFromCurrentImageContext();
-    CGContextRelease(faceRef);
+
     
     UIImageView *faceBg=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 66, 72)];
     faceBg.backgroundColor=[UIColor clearColor];

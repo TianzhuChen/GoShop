@@ -590,7 +590,8 @@ static int moveInitNumbers=0;
     if(direction==HORIZONTAL){
 //        controller.horizontalPreviousController=self;
         controller.view.frame=controller.defaultFrameOfNextHor;
-        [window insertSubview:controller.view aboveSubview:self.view];
+//        [window insertSubview:controller.view aboveSubview:self.view];
+        [window addSubviewBelowMenu:controller.view];
         [window insertSubview:blackLayer belowSubview:controller.view];
         
         blackLayer.alpha=0.1;

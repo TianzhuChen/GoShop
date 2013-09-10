@@ -156,41 +156,28 @@
 		B474A06F17DC89F200BE77D1 /* 139@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4749FE217DC89F200BE77D1 /* 139@2x.png */; };
 		B474A07017DC89F200BE77D1 /* 140@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4749FE317DC89F200BE77D1 /* 140@2x.png */; };
 		B474A07117DC89F200BE77D1 /* 141@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4749FE417DC89F200BE77D1 /* 141@2x.png */; };
-		B4FB7C89176A05E20047B07F /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FB7C88176A05E20047B07F /* MenuView.m */; };
 		FC0A3DF217C344400073B7CD /* 青春.lrc in Resources */ = {isa = PBXBuildFile; fileRef = FC0A3DF117C344400073B7CD /* 青春.lrc */; };
 		FC0B4EA117CB4CD80041C77B /* ControlBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0B4EA017CB4CD80041C77B /* ControlBase.m */; };
-		FC10EA2717797F0D007C0DAA /* GoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC10EA2517797F0D007C0DAA /* GoodViewController.m */; };
-		FC10EA2817797F0D007C0DAA /* GoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC10EA2617797F0D007C0DAA /* GoodViewController.xib */; };
 		FC26C3E517C76254000BBEF5 /* RequestHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = FC26C3E417C76254000BBEF5 /* RequestHelp.m */; };
 		FC26C3EB17C76C1D000BBEF5 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC26C3EA17C76C1D000BBEF5 /* libz.1.1.3.dylib */; };
 		FC26C3EF17C76DF2000BBEF5 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FC26C3EE17C76DF2000BBEF5 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FC272A6B1793951D00B43A66 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC272A691793951D00B43A66 /* AudioViewController.m */; };
-		FC272A6C1793951D00B43A66 /* AudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC272A6A1793951D00B43A66 /* AudioViewController.xib */; };
 		FC272A6F1793CC5300B43A66 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC272A6E1793CC5300B43A66 /* AudioToolbox.framework */; };
 		FC272A711793D3C200B43A66 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC272A701793D3C200B43A66 /* AVFoundation.framework */; };
-		FC28F70617700246009C43CE /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC28F70517700246009C43CE /* MenuItem.m */; };
 		FC28F708177002C1009C43CE /* leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = FC28F707177002C1009C43CE /* leaf.png */; };
 		FC2ADC911777F6C10013DFD5 /* ViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2ADC901777F6C10013DFD5 /* ViewControllerManager.m */; };
 		FC2D1F2117D88EFA00B62528 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D1F2017D88EFA00B62528 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FC2D1F2317D88F1B00B62528 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2D1F2217D88F1B00B62528 /* libicucore.dylib */; };
-		FC2FEE6B177C132D0009D1B4 /* AccountItem1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2FEE6A177C132D0009D1B4 /* AccountItem1Cell.m */; };
-		FC2FEE6D177C1BDB0009D1B4 /* AccountItem1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2FEE6C177C1BDB0009D1B4 /* AccountItem1Cell.xib */; };
 		FC2FEE6F177C21000009D1B4 /* userHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC2FEE6E177C21000009D1B4 /* userHeader@2x.png */; };
-		FC2FEE72177C2DCA0009D1B4 /* AccountItem2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2FEE71177C2DCA0009D1B4 /* AccountItem2Cell.m */; };
 		FC30099A177432D800AB170E /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC300999177432D800AB170E /* UIImage+ColorAtPixel.m */; };
 		FC30099E177432DD00AB170E /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FC30099D177432DD00AB170E /* OBShapedButton.m */; };
-		FC307DEF17C4649200FD19E6 /* MusicListView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC307DEE17C4649200FD19E6 /* MusicListView.m */; };
 		FC307F9117C4A90A00FD19E6 /* CTZBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC307F9017C4A90A00FD19E6 /* CTZBasicAnimation.m */; };
 		FC350CA81794F9E500F19B50 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC350CA71794F9E500F19B50 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FC350CAC1794FA0300F19B50 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC350CAB1794FA0300F19B50 /* AudioPlayer.m */; };
 		FC350CAE1794FB3800F19B50 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC350CAD1794FB3800F19B50 /* CFNetwork.framework */; };
-		FC350CB117952C0800F19B50 /* ControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC350CB017952C0800F19B50 /* ControlPanel.m */; };
 		FC3A391F1772A0D600F40719 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3A391E1772A0D600F40719 /* CoreImage.framework */; };
 		FC3A39211772A14C00F40719 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3A39201772A14C00F40719 /* QuartzCore.framework */; };
 		FC42EC5817C5C20300930EBE /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42EC5717C5C20300930EBE /* DataManager.m */; };
-		FC4BB20717C5B5320082F0C5 /* AccountData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4BB20617C5B5320082F0C5 /* AccountData.m */; };
 		FC50C06C17D9B4A900F1D0AD /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC50C06B17D9B4A900F1D0AD /* DataBase.m */; };
-		FC50C06F17D9B4BB00F1D0AD /* NewsWeiboData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC50C06E17D9B4BB00F1D0AD /* NewsWeiboData.m */; };
 		FC69E074177D832B00062C65 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FC69E058177D832B00062C65 /* MKAnnotationView+WebCache.m */; };
 		FC69E075177D832B00062C65 /* NSData+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = FC69E05A177D832B00062C65 /* NSData+GIF.m */; };
 		FC69E076177D832B00062C65 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FC69E05C177D832B00062C65 /* SDImageCache.m */; };
@@ -213,8 +200,6 @@
 		FC823CED176454C70056CCAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC823CEB176454C70056CCAF /* InfoPlist.strings */; };
 		FC823CEF176454C70056CCAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC823CEE176454C70056CCAF /* main.m */; };
 		FC823CF3176454C70056CCAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC823CF2176454C70056CCAF /* AppDelegate.m */; };
-		FC823CFC176454C70056CCAF /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC823CFB176454C70056CCAF /* NewsViewController.m */; };
-		FC823D0917645ADC0056CCAF /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC823D0817645ADC0056CCAF /* NewsViewController.xib */; };
 		FC823D0F176462640056CCAF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FC823D0E176462640056CCAF /* Default.png */; };
 		FC823D11176462750056CCAF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC823D10176462750056CCAF /* Default-568h@2x.png */; };
 		FC823D13176462790056CCAF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC823D12176462790056CCAF /* Default@2x.png */; };
@@ -224,13 +209,6 @@
 		FC823D2017646A070056CCAF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC823D1F17646A070056CCAF /* BaseViewController.m */; };
 		FC823D2817646CAB0056CCAF /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = FC823D2617646CAB0056CCAF /* menu.png */; };
 		FC823D2917646CAB0056CCAF /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC823D2717646CAB0056CCAF /* menu@2x.png */; };
-		FC823D2D176485100056CCAF /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC823D2B176485100056CCAF /* WeiboViewController.m */; };
-		FC823D2E176485100056CCAF /* WeiboViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC823D2C176485100056CCAF /* WeiboViewController.xib */; };
-		FC8A8A30178D4625007E8FDE /* AccountControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8A8A2F178D4625007E8FDE /* AccountControl.m */; };
-		FC8A8A33178D493D007E8FDE /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8A8A32178D493D007E8FDE /* LoginView.m */; };
-		FC902B1D177815A0001815EF /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC902B1B177815A0001815EF /* AccountViewController.m */; };
-		FC902B1E177815A0001815EF /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC902B1C177815A0001815EF /* AccountViewController.xib */; };
-		FC902B2117782C6E001815EF /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = FC902B2017782C6E001815EF /* Menu.m */; };
 		FC9C88B417C5E4880048217A /* SinaWeiboControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9C88B317C5E4880048217A /* SinaWeiboControl.m */; };
 		FC9C88B917C5EBD40048217A /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9C88B617C5EBD40048217A /* libWeiboSDK.a */; };
 		FC9C88BA17C5EBD40048217A /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC9C88B717C5EBD40048217A /* WeiboSDK.bundle */; };
@@ -238,11 +216,34 @@
 		FC9C88C417C5FF580048217A /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9C88C317C5FF580048217A /* fb.png */; };
 		FC9C88C617C5FF6E0048217A /* skype.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9C88C517C5FF6E0048217A /* skype.png */; };
 		FC9C88C817C5FF7D0048217A /* whatsapp.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9C88C717C5FF7D0048217A /* whatsapp.png */; };
-		FCB351BB177A9DB800A91E3B /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB351BA177A9DB800A91E3B /* NewsCell.m */; };
 		FCC73B21178EACE4003B6C41 /* userFace.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC73B20178EACE4003B6C41 /* userFace.png */; };
-		FCD55C4C17D71B8A00369265 /* NewsControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD55C4B17D71B8A00369265 /* NewsControl.m */; };
-		FCF6456D17BE12D8001E82C6 /* LRCView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6456C17BE12D8001E82C6 /* LRCView.m */; };
-		FCF85D5917D5C3410010187A /* NewsTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF85D5817D5C3410010187A /* NewsTableDelegate.m */; };
+		FCF7F25D17DF1C7300005A40 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F25617DF1C7300005A40 /* Menu.m */; };
+		FCF7F25E17DF1C7300005A40 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F25817DF1C7300005A40 /* MenuItem.m */; };
+		FCF7F25F17DF1C7300005A40 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F25A17DF1C7300005A40 /* MenuView.m */; };
+		FCF7F26017DF1C7300005A40 /* UIWindow+MenuWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F25C17DF1C7300005A40 /* UIWindow+MenuWindow.m */; };
+		FCF7F26817DF1CF000005A40 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F26217DF1CF000005A40 /* NewsCell.m */; };
+		FCF7F26917DF1CF000005A40 /* NewsTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F26417DF1CF000005A40 /* NewsTableDelegate.m */; };
+		FCF7F26A17DF1CF000005A40 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F26617DF1CF000005A40 /* NewsViewController.m */; };
+		FCF7F26B17DF1CF000005A40 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF7F26717DF1CF000005A40 /* NewsViewController.xib */; };
+		FCF7F27517DF1D1500005A40 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F26D17DF1D1500005A40 /* AudioViewController.m */; };
+		FCF7F27617DF1D1500005A40 /* AudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF7F26E17DF1D1500005A40 /* AudioViewController.xib */; };
+		FCF7F27717DF1D1500005A40 /* ControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F27017DF1D1500005A40 /* ControlPanel.m */; };
+		FCF7F27817DF1D1500005A40 /* LRCView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F27217DF1D1500005A40 /* LRCView.m */; };
+		FCF7F27917DF1D1500005A40 /* MusicListView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F27417DF1D1500005A40 /* MusicListView.m */; };
+		FCF7F28417DF1D4600005A40 /* AccountItem1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F27B17DF1D4600005A40 /* AccountItem1Cell.m */; };
+		FCF7F28517DF1D4600005A40 /* AccountItem1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF7F27C17DF1D4600005A40 /* AccountItem1Cell.xib */; };
+		FCF7F28617DF1D4600005A40 /* AccountItem2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F27E17DF1D4600005A40 /* AccountItem2Cell.m */; };
+		FCF7F28717DF1D4600005A40 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F28017DF1D4600005A40 /* AccountViewController.m */; };
+		FCF7F28817DF1D4600005A40 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF7F28117DF1D4600005A40 /* AccountViewController.xib */; };
+		FCF7F28917DF1D4600005A40 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F28317DF1D4600005A40 /* LoginView.m */; };
+		FCF7F28E17DF1DDF00005A40 /* NewsControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F28B17DF1DDF00005A40 /* NewsControl.m */; };
+		FCF7F28F17DF1DDF00005A40 /* NewsWeiboData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F28D17DF1DDF00005A40 /* NewsWeiboData.m */; };
+		FCF7F29417DF1E4600005A40 /* AccountControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F29117DF1E4600005A40 /* AccountControl.m */; };
+		FCF7F29517DF1E4600005A40 /* AccountData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F29317DF1E4600005A40 /* AccountData.m */; };
+		FCF7F29C17DF239F00005A40 /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F29A17DF239F00005A40 /* WeiboViewController.m */; };
+		FCF7F29D17DF239F00005A40 /* WeiboViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF7F29B17DF239F00005A40 /* WeiboViewController.xib */; };
+		FCF7F2A117DF23C200005A40 /* GoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F29F17DF23C200005A40 /* GoodViewController.m */; };
+		FCF7F2A217DF23C200005A40 /* GoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF7F2A017DF23C200005A40 /* GoodViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -398,44 +399,27 @@
 		B4749FE217DC89F200BE77D1 /* 139@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "139@2x.png"; sourceTree = "<group>"; };
 		B4749FE317DC89F200BE77D1 /* 140@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "140@2x.png"; sourceTree = "<group>"; };
 		B4749FE417DC89F200BE77D1 /* 141@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "141@2x.png"; sourceTree = "<group>"; };
-		B4FB7C87176A05E20047B07F /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
-		B4FB7C88176A05E20047B07F /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 		FC0A3DF117C344400073B7CD /* 青春.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "青春.lrc"; sourceTree = "<group>"; };
 		FC0B4E9F17CB4CD80041C77B /* ControlBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlBase.h; sourceTree = "<group>"; };
 		FC0B4EA017CB4CD80041C77B /* ControlBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlBase.m; sourceTree = "<group>"; };
-		FC10EA2417797F0D007C0DAA /* GoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodViewController.h; sourceTree = "<group>"; };
-		FC10EA2517797F0D007C0DAA /* GoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodViewController.m; sourceTree = "<group>"; };
-		FC10EA2617797F0D007C0DAA /* GoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodViewController.xib; sourceTree = "<group>"; };
 		FC26C3E317C76254000BBEF5 /* RequestHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHelp.h; sourceTree = "<group>"; };
 		FC26C3E417C76254000BBEF5 /* RequestHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelp.m; sourceTree = "<group>"; };
 		FC26C3EA17C76C1D000BBEF5 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		FC26C3ED17C76DF2000BBEF5 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		FC26C3EE17C76DF2000BBEF5 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		FC272A681793951D00B43A66 /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
-		FC272A691793951D00B43A66 /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
-		FC272A6A1793951D00B43A66 /* AudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioViewController.xib; sourceTree = "<group>"; };
 		FC272A6E1793CC5300B43A66 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FC272A701793D3C200B43A66 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		FC28F70417700246009C43CE /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
-		FC28F70517700246009C43CE /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
 		FC28F707177002C1009C43CE /* leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf.png; sourceTree = "<group>"; };
-		FC2ADC8F1777F6C10013DFD5 /* ViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerManager.h; sourceTree = "<group>"; };
-		FC2ADC901777F6C10013DFD5 /* ViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerManager.m; sourceTree = "<group>"; };
+		FC2ADC8F1777F6C10013DFD5 /* ViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerManager.h; path = controller/ViewControllerManager.h; sourceTree = "<group>"; };
+		FC2ADC901777F6C10013DFD5 /* ViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerManager.m; path = controller/ViewControllerManager.m; sourceTree = "<group>"; };
 		FC2D1F1F17D88EFA00B62528 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		FC2D1F2017D88EFA00B62528 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		FC2D1F2217D88F1B00B62528 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		FC2FEE69177C132D0009D1B4 /* AccountItem1Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountItem1Cell.h; sourceTree = "<group>"; };
-		FC2FEE6A177C132D0009D1B4 /* AccountItem1Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountItem1Cell.m; sourceTree = "<group>"; };
-		FC2FEE6C177C1BDB0009D1B4 /* AccountItem1Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountItem1Cell.xib; sourceTree = "<group>"; };
 		FC2FEE6E177C21000009D1B4 /* userHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userHeader@2x.png"; sourceTree = "<group>"; };
-		FC2FEE70177C2DCA0009D1B4 /* AccountItem2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountItem2Cell.h; sourceTree = "<group>"; };
-		FC2FEE71177C2DCA0009D1B4 /* AccountItem2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountItem2Cell.m; sourceTree = "<group>"; };
 		FC300998177432D800AB170E /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
 		FC300999177432D800AB170E /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 		FC30099C177432DD00AB170E /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
 		FC30099D177432DD00AB170E /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
-		FC307DED17C4649200FD19E6 /* MusicListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListView.h; sourceTree = "<group>"; };
-		FC307DEE17C4649200FD19E6 /* MusicListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListView.m; sourceTree = "<group>"; };
 		FC307F8F17C4A90A00FD19E6 /* CTZBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTZBasicAnimation.h; sourceTree = "<group>"; };
 		FC307F9017C4A90A00FD19E6 /* CTZBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTZBasicAnimation.m; sourceTree = "<group>"; };
 		FC350CA61794F9E500F19B50 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
@@ -443,18 +427,12 @@
 		FC350CAA1794FA0300F19B50 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		FC350CAB1794FA0300F19B50 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		FC350CAD1794FB3800F19B50 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		FC350CAF17952C0800F19B50 /* ControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlPanel.h; sourceTree = "<group>"; };
-		FC350CB017952C0800F19B50 /* ControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlPanel.m; sourceTree = "<group>"; };
 		FC3A391E1772A0D600F40719 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		FC3A39201772A14C00F40719 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FC42EC5617C5C20300930EBE /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		FC42EC5717C5C20300930EBE /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		FC4BB20517C5B5320082F0C5 /* AccountData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountData.h; sourceTree = "<group>"; };
-		FC4BB20617C5B5320082F0C5 /* AccountData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountData.m; sourceTree = "<group>"; };
 		FC50C06A17D9B4A900F1D0AD /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
 		FC50C06B17D9B4A900F1D0AD /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
-		FC50C06D17D9B4BB00F1D0AD /* NewsWeiboData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsWeiboData.h; sourceTree = "<group>"; };
-		FC50C06E17D9B4BB00F1D0AD /* NewsWeiboData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsWeiboData.m; sourceTree = "<group>"; };
 		FC69E057177D832B00062C65 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		FC69E058177D832B00062C65 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		FC69E059177D832B00062C65 /* NSData+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GIF.h"; sourceTree = "<group>"; };
@@ -496,33 +474,18 @@
 		FC823CF0176454C70056CCAF /* GoShop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoShop-Prefix.pch"; sourceTree = "<group>"; };
 		FC823CF1176454C70056CCAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC823CF2176454C70056CCAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC823CFA176454C70056CCAF /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewsViewController.h; path = ../NewsViewController.h; sourceTree = "<group>"; };
-		FC823CFB176454C70056CCAF /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = ../NewsViewController.m; sourceTree = "<group>"; };
 		FC823D07176456D50056CCAF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		FC823D0817645ADC0056CCAF /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsViewController.xib; path = ../NewsViewController.xib; sourceTree = "<group>"; };
 		FC823D0E176462640056CCAF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		FC823D10176462750056CCAF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		FC823D12176462790056CCAF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		FC823D14176462D40056CCAF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		FC823D16176462D80056CCAF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
-		FC823D1B176469A90056CCAF /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
-		FC823D1C176469A90056CCAF /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		FC823D1B176469A90056CCAF /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Theme.h; path = controller/Theme.h; sourceTree = "<group>"; };
+		FC823D1C176469A90056CCAF /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Theme.m; path = controller/Theme.m; sourceTree = "<group>"; };
 		FC823D1E17646A070056CCAF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		FC823D1F17646A070056CCAF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		FC823D2617646CAB0056CCAF /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		FC823D2717646CAB0056CCAF /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
-		FC823D2A176485100056CCAF /* WeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
-		FC823D2B176485100056CCAF /* WeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
-		FC823D2C176485100056CCAF /* WeiboViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboViewController.xib; sourceTree = "<group>"; };
-		FC8A8A2E178D4625007E8FDE /* AccountControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountControl.h; sourceTree = "<group>"; };
-		FC8A8A2F178D4625007E8FDE /* AccountControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountControl.m; sourceTree = "<group>"; };
-		FC8A8A31178D493D007E8FDE /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginView.h; path = account/LoginView.h; sourceTree = "<group>"; };
-		FC8A8A32178D493D007E8FDE /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginView.m; path = account/LoginView.m; sourceTree = "<group>"; };
-		FC902B1A177815A0001815EF /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
-		FC902B1B177815A0001815EF /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
-		FC902B1C177815A0001815EF /* AccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
-		FC902B1F17782C6E001815EF /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
-		FC902B2017782C6E001815EF /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		FC9C88B217C5E4880048217A /* SinaWeiboControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboControl.h; sourceTree = "<group>"; };
 		FC9C88B317C5E4880048217A /* SinaWeiboControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboControl.m; sourceTree = "<group>"; };
 		FC9C88B617C5EBD40048217A /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
@@ -534,15 +497,55 @@
 		FC9C88C317C5FF580048217A /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
 		FC9C88C517C5FF6E0048217A /* skype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skype.png; sourceTree = "<group>"; };
 		FC9C88C717C5FF7D0048217A /* whatsapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whatsapp.png; sourceTree = "<group>"; };
-		FCB351B9177A9DB800A91E3B /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
-		FCB351BA177A9DB800A91E3B /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		FCC73B20178EACE4003B6C41 /* userFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userFace.png; sourceTree = "<group>"; };
-		FCD55C4A17D71B8A00369265 /* NewsControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsControl.h; sourceTree = "<group>"; };
-		FCD55C4B17D71B8A00369265 /* NewsControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsControl.m; sourceTree = "<group>"; };
-		FCF6456B17BE12D8001E82C6 /* LRCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRCView.h; sourceTree = "<group>"; };
-		FCF6456C17BE12D8001E82C6 /* LRCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRCView.m; sourceTree = "<group>"; };
-		FCF85D5717D5C3410010187A /* NewsTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableDelegate.h; sourceTree = "<group>"; };
-		FCF85D5817D5C3410010187A /* NewsTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableDelegate.m; sourceTree = "<group>"; };
+		FCF7F25517DF1C7300005A40 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		FCF7F25617DF1C7300005A40 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		FCF7F25717DF1C7300005A40 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
+		FCF7F25817DF1C7300005A40 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
+		FCF7F25917DF1C7300005A40 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		FCF7F25A17DF1C7300005A40 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		FCF7F25B17DF1C7300005A40 /* UIWindow+MenuWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+MenuWindow.h"; sourceTree = "<group>"; };
+		FCF7F25C17DF1C7300005A40 /* UIWindow+MenuWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+MenuWindow.m"; sourceTree = "<group>"; };
+		FCF7F26117DF1CF000005A40 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		FCF7F26217DF1CF000005A40 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		FCF7F26317DF1CF000005A40 /* NewsTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableDelegate.h; sourceTree = "<group>"; };
+		FCF7F26417DF1CF000005A40 /* NewsTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableDelegate.m; sourceTree = "<group>"; };
+		FCF7F26517DF1CF000005A40 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		FCF7F26617DF1CF000005A40 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		FCF7F26717DF1CF000005A40 /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		FCF7F26C17DF1D1500005A40 /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		FCF7F26D17DF1D1500005A40 /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		FCF7F26E17DF1D1500005A40 /* AudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioViewController.xib; sourceTree = "<group>"; };
+		FCF7F26F17DF1D1500005A40 /* ControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlPanel.h; sourceTree = "<group>"; };
+		FCF7F27017DF1D1500005A40 /* ControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlPanel.m; sourceTree = "<group>"; };
+		FCF7F27117DF1D1500005A40 /* LRCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRCView.h; sourceTree = "<group>"; };
+		FCF7F27217DF1D1500005A40 /* LRCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRCView.m; sourceTree = "<group>"; };
+		FCF7F27317DF1D1500005A40 /* MusicListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListView.h; sourceTree = "<group>"; };
+		FCF7F27417DF1D1500005A40 /* MusicListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListView.m; sourceTree = "<group>"; };
+		FCF7F27A17DF1D4600005A40 /* AccountItem1Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountItem1Cell.h; sourceTree = "<group>"; };
+		FCF7F27B17DF1D4600005A40 /* AccountItem1Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountItem1Cell.m; sourceTree = "<group>"; };
+		FCF7F27C17DF1D4600005A40 /* AccountItem1Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountItem1Cell.xib; sourceTree = "<group>"; };
+		FCF7F27D17DF1D4600005A40 /* AccountItem2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountItem2Cell.h; sourceTree = "<group>"; };
+		FCF7F27E17DF1D4600005A40 /* AccountItem2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountItem2Cell.m; sourceTree = "<group>"; };
+		FCF7F27F17DF1D4600005A40 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		FCF7F28017DF1D4600005A40 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		FCF7F28117DF1D4600005A40 /* AccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		FCF7F28217DF1D4600005A40 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		FCF7F28317DF1D4600005A40 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		FCF7F28A17DF1DDF00005A40 /* NewsControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsControl.h; sourceTree = "<group>"; };
+		FCF7F28B17DF1DDF00005A40 /* NewsControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsControl.m; sourceTree = "<group>"; };
+		FCF7F28C17DF1DDF00005A40 /* NewsWeiboData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsWeiboData.h; sourceTree = "<group>"; };
+		FCF7F28D17DF1DDF00005A40 /* NewsWeiboData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsWeiboData.m; sourceTree = "<group>"; };
+		FCF7F29017DF1E4600005A40 /* AccountControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountControl.h; sourceTree = "<group>"; };
+		FCF7F29117DF1E4600005A40 /* AccountControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountControl.m; sourceTree = "<group>"; };
+		FCF7F29217DF1E4600005A40 /* AccountData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountData.h; sourceTree = "<group>"; };
+		FCF7F29317DF1E4600005A40 /* AccountData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountData.m; sourceTree = "<group>"; };
+		FCF7F29917DF239F00005A40 /* WeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
+		FCF7F29A17DF239F00005A40 /* WeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
+		FCF7F29B17DF239F00005A40 /* WeiboViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboViewController.xib; sourceTree = "<group>"; };
+		FCF7F29E17DF23C200005A40 /* GoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodViewController.h; sourceTree = "<group>"; };
+		FCF7F29F17DF23C200005A40 /* GoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodViewController.m; sourceTree = "<group>"; };
+		FCF7F2A017DF23C200005A40 /* GoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -731,57 +734,6 @@
 			path = Face;
 			sourceTree = "<group>";
 		};
-		FC10EA2017797DDA007C0DAA /* news */ = {
-			isa = PBXGroup;
-			children = (
-				FC823CFA176454C70056CCAF /* NewsViewController.h */,
-				FC823CFB176454C70056CCAF /* NewsViewController.m */,
-				FC823D0817645ADC0056CCAF /* NewsViewController.xib */,
-				FCB351B9177A9DB800A91E3B /* NewsCell.h */,
-				FCB351BA177A9DB800A91E3B /* NewsCell.m */,
-				FCF85D5717D5C3410010187A /* NewsTableDelegate.h */,
-				FCF85D5817D5C3410010187A /* NewsTableDelegate.m */,
-			);
-			name = news;
-			sourceTree = "<group>";
-		};
-		FC10EA2117797E5B007C0DAA /* goodNew */ = {
-			isa = PBXGroup;
-			children = (
-				FC10EA2417797F0D007C0DAA /* GoodViewController.h */,
-				FC10EA2517797F0D007C0DAA /* GoodViewController.m */,
-				FC10EA2617797F0D007C0DAA /* GoodViewController.xib */,
-			);
-			name = goodNew;
-			sourceTree = "<group>";
-		};
-		FC10EA2217797E64007C0DAA /* account */ = {
-			isa = PBXGroup;
-			children = (
-				FC902B1A177815A0001815EF /* AccountViewController.h */,
-				FC902B1B177815A0001815EF /* AccountViewController.m */,
-				FC902B1C177815A0001815EF /* AccountViewController.xib */,
-				FC2FEE69177C132D0009D1B4 /* AccountItem1Cell.h */,
-				FC2FEE6A177C132D0009D1B4 /* AccountItem1Cell.m */,
-				FC2FEE6C177C1BDB0009D1B4 /* AccountItem1Cell.xib */,
-				FC2FEE70177C2DCA0009D1B4 /* AccountItem2Cell.h */,
-				FC2FEE71177C2DCA0009D1B4 /* AccountItem2Cell.m */,
-				FC8A8A31178D493D007E8FDE /* LoginView.h */,
-				FC8A8A32178D493D007E8FDE /* LoginView.m */,
-			);
-			name = account;
-			sourceTree = "<group>";
-		};
-		FC10EA2317797E71007C0DAA /* weibo */ = {
-			isa = PBXGroup;
-			children = (
-				FC823D2A176485100056CCAF /* WeiboViewController.h */,
-				FC823D2B176485100056CCAF /* WeiboViewController.m */,
-				FC823D2C176485100056CCAF /* WeiboViewController.xib */,
-			);
-			name = weibo;
-			sourceTree = "<group>";
-		};
 		FC26C3EC17C76DF2000BBEF5 /* jsonkit */ = {
 			isa = PBXGroup;
 			children = (
@@ -789,35 +741,6 @@
 				FC26C3EE17C76DF2000BBEF5 /* JSONKit.m */,
 			);
 			path = jsonkit;
-			sourceTree = "<group>";
-		};
-		FC272A6D1793952300B43A66 /* audio */ = {
-			isa = PBXGroup;
-			children = (
-				FC272A681793951D00B43A66 /* AudioViewController.h */,
-				FC272A691793951D00B43A66 /* AudioViewController.m */,
-				FC272A6A1793951D00B43A66 /* AudioViewController.xib */,
-				FC350CAF17952C0800F19B50 /* ControlPanel.h */,
-				FC350CB017952C0800F19B50 /* ControlPanel.m */,
-				FCF6456B17BE12D8001E82C6 /* LRCView.h */,
-				FCF6456C17BE12D8001E82C6 /* LRCView.m */,
-				FC307DED17C4649200FD19E6 /* MusicListView.h */,
-				FC307DEE17C4649200FD19E6 /* MusicListView.m */,
-			);
-			name = audio;
-			sourceTree = "<group>";
-		};
-		FC28F70317700224009C43CE /* menu */ = {
-			isa = PBXGroup;
-			children = (
-				B4FB7C87176A05E20047B07F /* MenuView.h */,
-				B4FB7C88176A05E20047B07F /* MenuView.m */,
-				FC28F70417700246009C43CE /* MenuItem.h */,
-				FC28F70517700246009C43CE /* MenuItem.m */,
-				FC902B1F17782C6E001815EF /* Menu.h */,
-				FC902B2017782C6E001815EF /* Menu.m */,
-			);
-			name = menu;
 			sourceTree = "<group>";
 		};
 		FC2ADC8D1777E1820013DFD5 /* baseviewcontroller */ = {
@@ -829,7 +752,6 @@
 				FC823D1F17646A070056CCAF /* BaseViewController.m */,
 			);
 			name = baseviewcontroller;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		FC2D1F1E17D88EFA00B62528 /* RegexKitLite */ = {
@@ -887,10 +809,6 @@
 		FC50C06817D9AAB700F1D0AD /* news */ = {
 			isa = PBXGroup;
 			children = (
-				FCD55C4A17D71B8A00369265 /* NewsControl.h */,
-				FCD55C4B17D71B8A00369265 /* NewsControl.m */,
-				FC50C06D17D9B4BB00F1D0AD /* NewsWeiboData.h */,
-				FC50C06E17D9B4BB00F1D0AD /* NewsWeiboData.m */,
 			);
 			name = news;
 			sourceTree = "<group>";
@@ -898,10 +816,6 @@
 		FC50C06917D9B48800F1D0AD /* account */ = {
 			isa = PBXGroup;
 			children = (
-				FC4BB20517C5B5320082F0C5 /* AccountData.h */,
-				FC4BB20617C5B5320082F0C5 /* AccountData.m */,
-				FC8A8A2E178D4625007E8FDE /* AccountControl.h */,
-				FC8A8A2F178D4625007E8FDE /* AccountControl.m */,
 			);
 			name = account;
 			sourceTree = "<group>";
@@ -984,13 +898,13 @@
 		FC823CE8176454C70056CCAF /* GoShop */ = {
 			isa = PBXGroup;
 			children = (
-				FC8A8A2D178D4603007E8FDE /* modelAndControl */,
-				B433C1EF176C305F0077F0FE /* control */,
-				FC823D18176469670056CCAF /* view */,
 				FC823CF1176454C70056CCAF /* AppDelegate.h */,
 				FC823CF2176454C70056CCAF /* AppDelegate.m */,
+				B433C1EF176C305F0077F0FE /* control */,
+				FC8A8A2D178D4603007E8FDE /* modelAndControl */,
+				FCF7F25017DF1B4400005A40 /* modules */,
 				FC823CE9176454C70056CCAF /* Supporting Files */,
-				B431DB78177886FA00471276 /* Global.h */,
+				FC823D18176469670056CCAF /* view */,
 			);
 			path = GoShop;
 			sourceTree = "<group>";
@@ -998,6 +912,7 @@
 		FC823CE9176454C70056CCAF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B431DB78177886FA00471276 /* Global.h */,
 				FC823D16176462D80056CCAF /* Icon.png */,
 				FC823D14176462D40056CCAF /* Icon@2x.png */,
 				FC823D12176462790056CCAF /* Default@2x.png */,
@@ -1040,20 +955,6 @@
 		FC823D18176469670056CCAF /* view */ = {
 			isa = PBXGroup;
 			children = (
-				FC272A6D1793952300B43A66 /* audio */,
-				FC10EA2317797E71007C0DAA /* weibo */,
-				FC10EA2217797E64007C0DAA /* account */,
-				FC10EA2117797E5B007C0DAA /* goodNew */,
-				FC10EA2017797DDA007C0DAA /* news */,
-				FC823D1A176469820056CCAF /* control */,
-				FC28F70317700224009C43CE /* menu */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		FC823D1A176469820056CCAF /* control */ = {
-			isa = PBXGroup;
-			children = (
 				FCB351BE177AD55B00A91E3B /* baseview */,
 				FC2ADC8D1777E1820013DFD5 /* baseviewcontroller */,
 				FC823D1B176469A90056CCAF /* Theme.h */,
@@ -1061,8 +962,7 @@
 				FC2ADC8F1777F6C10013DFD5 /* ViewControllerManager.h */,
 				FC2ADC901777F6C10013DFD5 /* ViewControllerManager.m */,
 			);
-			name = control;
-			path = controller;
+			path = view;
 			sourceTree = "<group>";
 		};
 		FC823D2117646C630056CCAF /* ui */ = {
@@ -1129,6 +1029,118 @@
 				B431DB761778863200471276 /* CTZUITableView.m */,
 			);
 			name = baseview;
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FCF7F25017DF1B4400005A40 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				FCF7F29817DF238A00005A40 /* weibo */,
+				FCF7F29717DF238400005A40 /* hotNews */,
+				FCF7F25417DF1BB300005A40 /* menu */,
+				FCF7F25117DF1B9C00005A40 /* account */,
+				FCF7F25217DF1B9C00005A40 /* music */,
+				FCF7F25317DF1B9C00005A40 /* news */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		FCF7F25117DF1B9C00005A40 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				FCF7F29017DF1E4600005A40 /* AccountControl.h */,
+				FCF7F29117DF1E4600005A40 /* AccountControl.m */,
+				FCF7F29217DF1E4600005A40 /* AccountData.h */,
+				FCF7F29317DF1E4600005A40 /* AccountData.m */,
+				FCF7F27A17DF1D4600005A40 /* AccountItem1Cell.h */,
+				FCF7F27B17DF1D4600005A40 /* AccountItem1Cell.m */,
+				FCF7F27C17DF1D4600005A40 /* AccountItem1Cell.xib */,
+				FCF7F27D17DF1D4600005A40 /* AccountItem2Cell.h */,
+				FCF7F27E17DF1D4600005A40 /* AccountItem2Cell.m */,
+				FCF7F27F17DF1D4600005A40 /* AccountViewController.h */,
+				FCF7F28017DF1D4600005A40 /* AccountViewController.m */,
+				FCF7F28117DF1D4600005A40 /* AccountViewController.xib */,
+				FCF7F28217DF1D4600005A40 /* LoginView.h */,
+				FCF7F28317DF1D4600005A40 /* LoginView.m */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		FCF7F25217DF1B9C00005A40 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				FCF7F26C17DF1D1500005A40 /* AudioViewController.h */,
+				FCF7F26D17DF1D1500005A40 /* AudioViewController.m */,
+				FCF7F26E17DF1D1500005A40 /* AudioViewController.xib */,
+				FCF7F26F17DF1D1500005A40 /* ControlPanel.h */,
+				FCF7F27017DF1D1500005A40 /* ControlPanel.m */,
+				FCF7F27117DF1D1500005A40 /* LRCView.h */,
+				FCF7F27217DF1D1500005A40 /* LRCView.m */,
+				FCF7F27317DF1D1500005A40 /* MusicListView.h */,
+				FCF7F27417DF1D1500005A40 /* MusicListView.m */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		FCF7F25317DF1B9C00005A40 /* news */ = {
+			isa = PBXGroup;
+			children = (
+				FCF7F29617DF219400005A40 /* modelC */,
+				FCF7F26117DF1CF000005A40 /* NewsCell.h */,
+				FCF7F26217DF1CF000005A40 /* NewsCell.m */,
+				FCF7F26317DF1CF000005A40 /* NewsTableDelegate.h */,
+				FCF7F26417DF1CF000005A40 /* NewsTableDelegate.m */,
+				FCF7F26517DF1CF000005A40 /* NewsViewController.h */,
+				FCF7F26617DF1CF000005A40 /* NewsViewController.m */,
+				FCF7F26717DF1CF000005A40 /* NewsViewController.xib */,
+			);
+			path = news;
+			sourceTree = "<group>";
+		};
+		FCF7F25417DF1BB300005A40 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				FCF7F25517DF1C7300005A40 /* Menu.h */,
+				FCF7F25617DF1C7300005A40 /* Menu.m */,
+				FCF7F25717DF1C7300005A40 /* MenuItem.h */,
+				FCF7F25817DF1C7300005A40 /* MenuItem.m */,
+				FCF7F25917DF1C7300005A40 /* MenuView.h */,
+				FCF7F25A17DF1C7300005A40 /* MenuView.m */,
+				FCF7F25B17DF1C7300005A40 /* UIWindow+MenuWindow.h */,
+				FCF7F25C17DF1C7300005A40 /* UIWindow+MenuWindow.m */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		FCF7F29617DF219400005A40 /* modelC */ = {
+			isa = PBXGroup;
+			children = (
+				FCF7F28A17DF1DDF00005A40 /* NewsControl.h */,
+				FCF7F28B17DF1DDF00005A40 /* NewsControl.m */,
+				FCF7F28C17DF1DDF00005A40 /* NewsWeiboData.h */,
+				FCF7F28D17DF1DDF00005A40 /* NewsWeiboData.m */,
+			);
+			name = modelC;
+			sourceTree = "<group>";
+		};
+		FCF7F29717DF238400005A40 /* hotNews */ = {
+			isa = PBXGroup;
+			children = (
+				FCF7F29E17DF23C200005A40 /* GoodViewController.h */,
+				FCF7F29F17DF23C200005A40 /* GoodViewController.m */,
+				FCF7F2A017DF23C200005A40 /* GoodViewController.xib */,
+			);
+			path = hotNews;
+			sourceTree = "<group>";
+		};
+		FCF7F29817DF238A00005A40 /* weibo */ = {
+			isa = PBXGroup;
+			children = (
+				FCF7F29917DF239F00005A40 /* WeiboViewController.h */,
+				FCF7F29A17DF239F00005A40 /* WeiboViewController.m */,
+				FCF7F29B17DF239F00005A40 /* WeiboViewController.xib */,
+			);
+			path = weibo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1184,7 +1196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC823CED176454C70056CCAF /* InfoPlist.strings in Resources */,
-				FC823D0917645ADC0056CCAF /* NewsViewController.xib in Resources */,
 				FC823D0F176462640056CCAF /* Default.png in Resources */,
 				FC823D11176462750056CCAF /* Default-568h@2x.png in Resources */,
 				FC823D13176462790056CCAF /* Default@2x.png in Resources */,
@@ -1192,15 +1203,10 @@
 				FC823D17176462D80056CCAF /* Icon.png in Resources */,
 				FC823D2817646CAB0056CCAF /* menu.png in Resources */,
 				FC823D2917646CAB0056CCAF /* menu@2x.png in Resources */,
-				FC823D2E176485100056CCAF /* WeiboViewController.xib in Resources */,
 				B433C1EE176C29030077F0FE /* menuBg@2x.png in Resources */,
 				FC28F708177002C1009C43CE /* leaf.png in Resources */,
-				FC902B1E177815A0001815EF /* AccountViewController.xib in Resources */,
-				FC10EA2817797F0D007C0DAA /* GoodViewController.xib in Resources */,
-				FC2FEE6D177C1BDB0009D1B4 /* AccountItem1Cell.xib in Resources */,
 				FC2FEE6F177C21000009D1B4 /* userHeader@2x.png in Resources */,
 				FCC73B21178EACE4003B6C41 /* userFace.png in Resources */,
-				FC272A6C1793951D00B43A66 /* AudioViewController.xib in Resources */,
 				B429919E17C0DD5100F7C7F6 /* 青春.mp3 in Resources */,
 				B42991A017C0DD6300F7C7F6 /* 青春1.lrc in Resources */,
 				FC0A3DF217C344400073B7CD /* 青春.lrc in Resources */,
@@ -1349,6 +1355,12 @@
 				B474A06F17DC89F200BE77D1 /* 139@2x.png in Resources */,
 				B474A07017DC89F200BE77D1 /* 140@2x.png in Resources */,
 				B474A07117DC89F200BE77D1 /* 141@2x.png in Resources */,
+				FCF7F26B17DF1CF000005A40 /* NewsViewController.xib in Resources */,
+				FCF7F27617DF1D1500005A40 /* AudioViewController.xib in Resources */,
+				FCF7F28517DF1D4600005A40 /* AccountItem1Cell.xib in Resources */,
+				FCF7F28817DF1D4600005A40 /* AccountViewController.xib in Resources */,
+				FCF7F29D17DF239F00005A40 /* WeiboViewController.xib in Resources */,
+				FCF7F2A217DF23C200005A40 /* GoodViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1362,24 +1374,14 @@
 				B431DB791778871300471276 /* Global.h in Sources */,
 				FC823CEF176454C70056CCAF /* main.m in Sources */,
 				FC823CF3176454C70056CCAF /* AppDelegate.m in Sources */,
-				FC823CFC176454C70056CCAF /* NewsViewController.m in Sources */,
 				FC823D1D176469A90056CCAF /* Theme.m in Sources */,
 				FC823D2017646A070056CCAF /* BaseViewController.m in Sources */,
-				FC823D2D176485100056CCAF /* WeiboViewController.m in Sources */,
 				B461B50D1765CB8D00CFDEA1 /* SwitchControllerBase.m in Sources */,
-				B4FB7C89176A05E20047B07F /* MenuView.m in Sources */,
 				B433C1F2176C30940077F0FE /* Help.m in Sources */,
-				FC28F70617700246009C43CE /* MenuItem.m in Sources */,
 				FC30099A177432D800AB170E /* UIImage+ColorAtPixel.m in Sources */,
 				FC30099E177432DD00AB170E /* OBShapedButton.m in Sources */,
 				FC2ADC911777F6C10013DFD5 /* ViewControllerManager.m in Sources */,
-				FC902B1D177815A0001815EF /* AccountViewController.m in Sources */,
-				FC902B2117782C6E001815EF /* Menu.m in Sources */,
 				B431DB771778863200471276 /* CTZUITableView.m in Sources */,
-				FC10EA2717797F0D007C0DAA /* GoodViewController.m in Sources */,
-				FCB351BB177A9DB800A91E3B /* NewsCell.m in Sources */,
-				FC2FEE6B177C132D0009D1B4 /* AccountItem1Cell.m in Sources */,
-				FC2FEE72177C2DCA0009D1B4 /* AccountItem2Cell.m in Sources */,
 				FC69E074177D832B00062C65 /* MKAnnotationView+WebCache.m in Sources */,
 				FC69E075177D832B00062C65 /* NSData+GIF.m in Sources */,
 				FC69E076177D832B00062C65 /* SDImageCache.m in Sources */,
@@ -1394,27 +1396,38 @@
 				FC69E07F177D832B00062C65 /* UIImage+MultiFormat.m in Sources */,
 				FC69E080177D832B00062C65 /* UIImage+WebP.m in Sources */,
 				FC69E081177D832B00062C65 /* UIImageView+WebCache.m in Sources */,
-				FC8A8A30178D4625007E8FDE /* AccountControl.m in Sources */,
-				FC8A8A33178D493D007E8FDE /* LoginView.m in Sources */,
-				FC272A6B1793951D00B43A66 /* AudioViewController.m in Sources */,
 				FC350CA81794F9E500F19B50 /* AudioStreamer.m in Sources */,
 				FC350CAC1794FA0300F19B50 /* AudioPlayer.m in Sources */,
-				FC350CB117952C0800F19B50 /* ControlPanel.m in Sources */,
-				FCF6456D17BE12D8001E82C6 /* LRCView.m in Sources */,
-				FC307DEF17C4649200FD19E6 /* MusicListView.m in Sources */,
 				FC307F9117C4A90A00FD19E6 /* CTZBasicAnimation.m in Sources */,
-				FC4BB20717C5B5320082F0C5 /* AccountData.m in Sources */,
 				FC42EC5817C5C20300930EBE /* DataManager.m in Sources */,
 				FC9C88B417C5E4880048217A /* SinaWeiboControl.m in Sources */,
 				FC9C88BE17C5F1D90048217A /* WeiboBase.m in Sources */,
 				FC26C3E517C76254000BBEF5 /* RequestHelp.m in Sources */,
 				FC26C3EF17C76DF2000BBEF5 /* JSONKit.m in Sources */,
 				FC0B4EA117CB4CD80041C77B /* ControlBase.m in Sources */,
-				FCF85D5917D5C3410010187A /* NewsTableDelegate.m in Sources */,
-				FCD55C4C17D71B8A00369265 /* NewsControl.m in Sources */,
 				FC2D1F2117D88EFA00B62528 /* RegexKitLite.m in Sources */,
 				FC50C06C17D9B4A900F1D0AD /* DataBase.m in Sources */,
-				FC50C06F17D9B4BB00F1D0AD /* NewsWeiboData.m in Sources */,
+				FCF7F25D17DF1C7300005A40 /* Menu.m in Sources */,
+				FCF7F25E17DF1C7300005A40 /* MenuItem.m in Sources */,
+				FCF7F25F17DF1C7300005A40 /* MenuView.m in Sources */,
+				FCF7F26017DF1C7300005A40 /* UIWindow+MenuWindow.m in Sources */,
+				FCF7F26817DF1CF000005A40 /* NewsCell.m in Sources */,
+				FCF7F26917DF1CF000005A40 /* NewsTableDelegate.m in Sources */,
+				FCF7F26A17DF1CF000005A40 /* NewsViewController.m in Sources */,
+				FCF7F27517DF1D1500005A40 /* AudioViewController.m in Sources */,
+				FCF7F27717DF1D1500005A40 /* ControlPanel.m in Sources */,
+				FCF7F27817DF1D1500005A40 /* LRCView.m in Sources */,
+				FCF7F27917DF1D1500005A40 /* MusicListView.m in Sources */,
+				FCF7F28417DF1D4600005A40 /* AccountItem1Cell.m in Sources */,
+				FCF7F28617DF1D4600005A40 /* AccountItem2Cell.m in Sources */,
+				FCF7F28717DF1D4600005A40 /* AccountViewController.m in Sources */,
+				FCF7F28917DF1D4600005A40 /* LoginView.m in Sources */,
+				FCF7F28E17DF1DDF00005A40 /* NewsControl.m in Sources */,
+				FCF7F28F17DF1DDF00005A40 /* NewsWeiboData.m in Sources */,
+				FCF7F29417DF1E4600005A40 /* AccountControl.m in Sources */,
+				FCF7F29517DF1E4600005A40 /* AccountData.m in Sources */,
+				FCF7F29C17DF239F00005A40 /* WeiboViewController.m in Sources */,
+				FCF7F2A117DF23C200005A40 /* GoodViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

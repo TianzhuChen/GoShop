@@ -90,7 +90,8 @@
         //绘制背景图
         UIGraphicsBeginImageContextWithOptions(Tframe.size, NO, 0);
         CGContextRef ref=UIGraphicsGetCurrentContext();
-        CGColorRef colorRef=[UIColor colorWithRed:arc4random()%255/255.0f green:arc4random()%255/255.0f blue:arc4random()%255/255.0f alpha:1].CGColor;
+        UIColor *tempColor=[UIColor colorWithRed:arc4random()%255/255.0f green:arc4random()%255/255.0f blue:arc4random()%255/255.0f alpha:1];
+        CGColorRef colorRef=tempColor.CGColor;
         CGContextSetLineWidth(ref,1);
         CGContextSetFillColorWithColor(ref, colorRef);
         CGContextSetStrokeColorWithColor(ref, colorRef);
@@ -102,7 +103,7 @@
         CGContextStrokePath(ref);
         
         UIImage *bgImg=UIGraphicsGetImageFromCurrentImageContext();
-        
+        UIGraphicsEndImageContext();
         [self setBackgroundImage:bgImg forState:UIControlStateNormal];
         
 //        UIGraphicsBeginImageContextWithOptions(Tframe.size, NO, 0);

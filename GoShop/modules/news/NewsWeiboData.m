@@ -32,55 +32,70 @@ static CGSize labelSize;
 {
 //    NSLog(@"uifon>>>%f",[UIFont systemFontOfSize:12].lineHeight);
     NSString *content=[NSString stringWithFormat:@"%@\n%@\n%@",screenName,createTime,weiboContent];
-    contentHeight=[weiboContent sizeWithFont:[UIFont systemFontOfSize:12]
-                           constrainedToSize:labelSize
-                               lineBreakMode:NSLineBreakByWordWrapping].height;
     content=[self getFaceImage:content];
     
-    //行缩进
-    CGFloat screennameLineindentValue=45.0f;
-    //行高
-    CGFloat screennamelineHeightValue=20.f;
-    
-    CTParagraphStyleSetting seetings[]={
-        getParagrafSeeting(&screennameLineindentValue, kCTParagraphStyleSpecifierFirstLineHeadIndent),
-        getParagrafSeeting(&screennamelineHeightValue, kCTParagraphStyleSpecifierMinimumLineHeight)};
-    CTParagraphStyleRef screennameLineParagraphStyle=CTParagraphStyleCreate(seetings, sizeof(seetings));
-    
-    //行间距
-    CGFloat screenLineSpaceValue=5.0f;
-    //第二行的样式设置
-    CTParagraphStyleSetting seetings1[]={
-        getParagrafSeeting(&screenLineSpaceValue, kCTParagraphStyleSpecifierLineSpacing)};
-    CTParagraphStyleRef createtimeLineParagraphStyle=CTParagraphStyleCreate(seetings1, sizeof(seetings1));
-    
     NSMutableAttributedString *createTimeAttributed=[[NSMutableAttributedString alloc] initWithString:content];
-   //高亮标注内容中的微博账号名称
+    
+    //高亮标注内容中的微博账号名称
     NSRange range=[content rangeOfRegex:@"#.*#"];
     if(range.location!=NSNotFound)
     {
         [createTimeAttributed addAttribute:CFBridgingRelease(kCTForegroundColorAttributeName)
                                      value:weiboLinkColor
                                      range:range];
+        //        NSLog(@"3>>>>%@",[content substringWithRange:range]);
+        //        [createTimeAttributed addAttribute:CFBridgingRelease(kCTFontAttributeName)
+        //                                     value:CFBridgingRelease(CTFontCreateWithName((__bridge CFTypeRef)([UIFont systemFontOfSize:12].fontName), 12, NULL))
+        //                                     range:range];
     }
-    [createTimeAttributed addAttribute:CFBridgingRelease(kCTFontAttributeName)
-                                 value:CFBridgingRelease(CTFontCreateWithName((__bridge CFTypeRef)([UIFont systemFontOfSize:12].fontName), 12, NULL))
-                                 range:range];
-    [createTimeAttributed addAttribute:CFBridgingRelease(kCTParagraphStyleAttributeName)
-                                 value:(__bridge id)(screennameLineParagraphStyle)
-                                 range:NSMakeRange(0, 1)];
+    
+    //行缩进
+    static CGFloat screennameLineindentValue=45.0f;
+    //行高
+    static CGFloat screennamelineHeightValue=20.f;
+    //第一行行间距
+    static CGFloat screennameLineSpaceValue=0.0f;
+    CTParagraphStyleSetting seetings[]={
+        getParagrafSeeting(&screennameLineindentValue, kCTParagraphStyleSpecifierFirstLineHeadIndent),
+        getParagrafSeeting(&screennamelineHeightValue, kCTParagraphStyleSpecifierMinimumLineHeight),
+        getParagrafSeeting(&screennameLineSpaceValue, kCTParagraphStyleSpecifierLineSpacingAdjustment)};
+    CTParagraphStyleRef screennameLineParagraphStyle=CTParagraphStyleCreate(seetings, 3);
+    
     [createTimeAttributed addAttribute:CFBridgingRelease(kCTParagraphStyleAttributeName)
                                  value:CFBridgingRelease(screennameLineParagraphStyle)
-                                 range:NSMakeRange(screenName.length+1, 1)];
+                                 range:NSMakeRange(0, 1)];
+    //行缩进
+//   static CGFloat createtimeLineindentValue=45.0f;
+//    //行高
+//   static CGFloat createtimelineHeightValue=20.f;
+    //行间距
+   static CGFloat createtimeLineSpaceValue=5.0f;
+    
+    //第二行的样式设置
+    CTParagraphStyleSetting seetings2[]={
+        getParagrafSeeting(&screennameLineindentValue, kCTParagraphStyleSpecifierFirstLineHeadIndent),
+        getParagrafSeeting(&screennamelineHeightValue, kCTParagraphStyleSpecifierMinimumLineHeight),
+        getParagrafSeeting(&createtimeLineSpaceValue, kCTParagraphStyleSpecifierLineSpacingAdjustment)};
+    CTParagraphStyleRef createtimeLineParagraphStyle=CTParagraphStyleCreate(seetings2, 3);
     [createTimeAttributed addAttribute:CFBridgingRelease(kCTParagraphStyleAttributeName)
                                  value:CFBridgingRelease(createtimeLineParagraphStyle)
-                                 range:NSMakeRange(screenName.length+1, 3)];
-//    NSDictionary *dic=@{@"width":@20,@"height":@20,@"descent":@0};
+                                 range:NSMakeRange(screenName.length+1, 1)];
+    
+    CTParagraphStyleSetting lineBreakMode;
+    CTLineBreakMode lineBreak = kCTLineBreakByWordWrapping; //换行模式
+    lineBreakMode.spec = kCTParagraphStyleSpecifierLineBreakMode;
+    lineBreakMode.value = &lineBreak;
+    lineBreakMode.valueSize = sizeof(CTLineBreakMode);
+    CTParagraphStyleSetting lineSeeting[]={lineBreakMode};
+    CTParagraphStyleRef lineBreakParagraphStyle=CTParagraphStyleCreate(lineSeeting, 1);
+    [createTimeAttributed addAttribute:CFBridgingRelease(kCTParagraphStyleAttributeName)
+                                 value:CFBridgingRelease(lineBreakParagraphStyle)
+                                 range:NSMakeRange(0,0)];
+
     //设置表情图片的ctrun
     CTRunDelegateCallbacks delegateCallBacks=getCtrunDelegateCallback();
     for(NSDictionary *dic in faceImageRangeArr)
     {
-        
         CTRunDelegateRef runDelegateRef=CTRunDelegateCreate(&delegateCallBacks, (__bridge void *)(dic));
         NSRange range;
         [[dic objectForKey:keyFaceImageRange] getValue:&range];
@@ -89,7 +104,6 @@ static CGSize labelSize;
                                      range:range];
 //        NSLog(@"contentsssss>>>%@",content);
     }
-    
     
     CTFramesetterRef framesetter=CTFramesetterCreateWithAttributedString((__bridge CFTypeRef)(createTimeAttributed));
     CGSize size= CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRangeMake(0,0), NULL, CGSizeMake(300, 2000), NULL );
@@ -121,7 +135,7 @@ CTParagraphStyleSetting getParagrafSeeting(const void* value,CTParagraphStyleSpe
     CTParagraphStyleSetting paragrafSetting;
     paragrafSetting.spec=spec;
     paragrafSetting.value=value;
-    paragrafSetting.valueSize=sizeof(float);
+    paragrafSetting.valueSize=sizeof(CGFloat);
     return paragrafSetting;
 }
 #pragma mark CTRunCallBacks
@@ -156,32 +170,45 @@ static CGFloat widthCallback( void* ref ){
 -(NSString *)getFaceImage:(NSString *)contents
 {
     NSRange range=NSMakeRange(0, 0);
-    //循环查找表情
-    while (YES) {
-//        range=[contents rangeOfRegex:@"\\[.{2}\\]"];
-        range=[contents rangeOfRegex:@"\\[.{2}\\]" inRange:NSMakeRange(range.location+range.length, contents.length-range.location-range.length)];
-        if(range.location!=NSNotFound)
-        {
-            if(!faceImageRangeArr)
+    NSString *tempContent=contents;
+    @try {
+        //循环查找表情
+        while (YES) {
+            //        range=[contents rangeOfRegex:@"\\[.{2}\\]"];
+            range.location=range.location+range.length;
+            range.length=tempContent.length-range.location-range.length;
+//            NSLog(@"rangeLength>>>>%@|||%@|||%d",NSStringFromRange(range),tempContent,i);
+            range=[tempContent rangeOfRegex:@"\\[.{2}\\]" inRange:range];
+            if(range.location!=NSNotFound)
             {
-                faceImageRangeArr=[[NSMutableArray alloc] init];
+                if(!faceImageRangeArr)
+                {
+                    faceImageRangeArr=[[NSMutableArray alloc] init];
+                }
+                
+                tempContent=[tempContent stringByReplacingCharactersInRange:range withString:@""];
+                range.length=0;
+                NSDictionary *dic=@{keyFaceImageWidth:@23,
+                                    keyFaceImageHeight:@23,
+                                    keyFaceImageDescent:@5,
+                                    keyFaceImageRange:[NSValue valueWithRange:range]};
+                
+                [faceImageRangeArr addObject:dic];
+            }else
+            {
+                break;
             }
-            range.length=range.length;
-            contents=[contents stringByReplacingCharactersInRange:range withString:@" "];
-            range.length=1;
-            NSDictionary *dic=@{keyFaceImageWidth:@23,
-                                keyFaceImageHeight:@23,
-                                keyFaceImageDescent:@5,
-                                keyFaceImageRange:[NSValue valueWithRange:range]};
-            
-            [faceImageRangeArr addObject:dic];
-        }else
-        {
-            break;
         }
     }
+    @catch (NSException *exception) {
+        NSLog(@"exc>>>%@",exception.debugDescription);
+    }
+    @finally {
+        
+    }
 
-    return contents;
+
+    return tempContent;
 }
 //根据最终布局，计算表情图片绘制的具体位置
 -(void)getFaceImageRect:(CTFrameRef)frameRef

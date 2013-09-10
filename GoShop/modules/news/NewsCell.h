@@ -13,11 +13,12 @@
 
 @interface NewsCell : UITableViewCell
 {
-    UIImageView *userProfileImage;
     __weak NewsWeiboData *weiboData;
+    UIImageView *userProfileImage;
     CGRect userWeiboContentRect;
     CGRect userScreenNameRect;
     CGRect userWeiboTimeRect;
+    BOOL canUpdate;
 }
 -(void)showWeibo:(NewsWeiboData *)data;
 //更新下载cell当中的图片

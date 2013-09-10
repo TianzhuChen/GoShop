@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
+#import "UIWindow+MenuWindow.h"
 
 typedef enum {
     HORIZONTAL,
@@ -28,7 +29,7 @@ typedef struct{
 //    UIImage *lastPageScreenshot;
 }
 @property (nonatomic,weak) id<SwitchControllerBaseDelegate> switchDelegate;
-@property (nonatomic,weak) UIView *window;
+@property (nonatomic,weak) UIWindow *window;
 //是否支持水平方向
 @property (nonatomic) BOOL isSupportHorizontalMove;
 //是否支持垂直方向

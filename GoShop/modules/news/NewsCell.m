@@ -56,6 +56,8 @@ static UIImage *bgImage;//背景图片
 //        userWeiboContent.backgroundColor=[UIColor clearColor];
 //        [self addSubview:userWeiboContent];
         
+        canUpdate=YES;
+        
     }
     return self;
 }
@@ -65,21 +67,19 @@ static UIImage *bgImage;//背景图片
 
     // Configure the view for the selected state
 }
+-(void)prepareForReuse
+{
+    canUpdate=YES;
+}
 -(void)showWeibo:(NewsWeiboData *)data
 {
     weiboData=data;
-//    userScreenNameLabel.text=[[data objectForKey:@"user"] valueForKey:@"screen_name"];
-//    userWeiboContent.text=[data objectForKey:@"text"];
-
-//    userWeiboContentRect.size.height=[weiboData.weiboContent sizeWithFont:[UIFont systemFontOfSize:12]
-//                                     constrainedToSize:labelSize
-//                                         lineBreakMode:NSLineBreakByWordWrapping].height;
 //   [self setNeedsDisplay];
 }
 -(void)updateCellImage
 {
     [userProfileImage setImageWithURL:[NSURL URLWithString:weiboData.profileImageUrl]];
-     
+    canUpdate=YES;
 }
 -(void)drawRect:(CGRect)rect
 {
@@ -88,31 +88,27 @@ static UIImage *bgImage;//背景图片
     [bgImage drawInRect:CGRectMake(5, 5, 310, CGRectGetHeight(self.frame)-5)
               blendMode:kCGBlendModeCopy
                   alpha:1.0];
-    
-//    CGContextConcatCTM(context, CGAffineTransformScale(CGAffineTransformMakeTranslation(0, rect.size.height), 1.f, -1.f));
-
-    
-    if(![weiboData haveCached])
+    if(canUpdate)
     {
-        [weiboData updateFrameRefCache];
-    }
-    
-
-    for(NSDictionary *dic in weiboData.faceImages)
-    {
+        if(![weiboData haveCached])
+        {
+            [weiboData updateFrameRefCache];
+        }
+        for(NSDictionary *dic in weiboData.faceImages)
+        {
+            
+            UIImage *img=[UIImage imageNamed:[dic objectForKey:keyFaceImageName]];
+            CGRect rect;
+            NSValue *value=[dic objectForKey:keyFaceImageRect];
+            [value getValue:&rect];
+            [img drawInRect:rect];
+            
+        }
+        CGContextTranslateCTM(context, 0, rect.size.height);
+        CGContextScaleCTM(context, 1.0f, -1.0f);
         
-        UIImage *img=[UIImage imageNamed:[dic objectForKey:keyFaceImageName]];
-        CGRect rect;
-        NSValue *value=[dic objectForKey:keyFaceImageRect];
-        [value getValue:&rect];
-        [img drawInRect:rect];
-        
+        CTFrameDraw(weiboData.frameRefCache, context);
     }
-    CGContextTranslateCTM(context, 0, rect.size.height);
-    CGContextScaleCTM(context, 1.0f, -1.0f);
-
-    CTFrameDraw(weiboData.frameRefCache, context);
-
 }
 +(CGFloat)getCellHeight:(NewsWeiboData *)data
 {
@@ -130,5 +126,9 @@ static UIImage *bgImage;//背景图片
 -(void)drawContentWithContext:(CGContextRef *)context
 {
     
+}
+-(void)dealloc
+{
+    NSLog(@"dealloc");
 }
 @end

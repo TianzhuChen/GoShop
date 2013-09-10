@@ -302,6 +302,8 @@ float millisecond=0;
     float labelWidth=CGRectGetWidth(self.frame);
     __block float contentTotalHeight=0;
     CGSize constrainedSize=CGSizeMake(labelWidth, 5000);
+    
+    
     [lrcContents enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
         UILabel *lrcLineLabel=[[UILabel alloc] init];
         lrcLineLabel.textColor=lrcNormalColor;
@@ -313,7 +315,6 @@ float millisecond=0;
         CGSize size=[lrcLineLabel.text sizeWithFont:lrcFont constrainedToSize:constrainedSize];
         contentTotalHeight+=size.height+lrcLineGap;
         lrcLineLabel.frame=CGRectMake(0, 30*idx, labelWidth, size.height+4);
-
         [lrcScrollView addSubview:lrcLineLabel];
         [tempLineLabels addObject:lrcLineLabel];
         
@@ -532,6 +533,8 @@ bool havedPrepareUI=false;
     timeLabel.font=[UIFont systemFontOfSize:11];
 }
 -(void)dealloc{
-    [[self class] cancelPreviousPerformRequestsWithTarget:self selector:@selector(startUpdate) object:nil];
+    [[self class] cancelPreviousPerformRequestsWithTarget:self
+                                                 selector:@selector(startUpdate)
+                                                   object:nil];
 }
 @end

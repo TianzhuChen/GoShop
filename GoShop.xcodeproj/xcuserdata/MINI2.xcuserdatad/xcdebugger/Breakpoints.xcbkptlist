@@ -8,12 +8,36 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "GoShop/view/NewsCell.m"
-         timestampString = "400154808.547114"
+         timestampString = "400490191.745221"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "138"
-         endingLineNumber = "138"
-         landmarkName = "-drawRect:"
+         endingLineNumber = "138">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "GoShop/NewsViewController.m"
+         timestampString = "400490191.745221"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "117"
+         endingLineNumber = "117"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "GoShop/model/NewsWeiboData.m"
+         timestampString = "400487791.583298"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "35"
+         endingLineNumber = "35"
+         landmarkName = "-updateFrameRefCache"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

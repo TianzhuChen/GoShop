@@ -14,7 +14,7 @@
 #define IPHONE5_SIZE CGSizeMake(320, 568)
 #define IPHONE4_SIZE CGSizeMake(320, 480)
 
-#define LIMIT_CGRECT CGRectMake(CGRectGetWidth(window.frame)-50, CGRectGetHeight(window.frame)-50, 50, 50)
+#define LIMIT_CGRECT CGRectMake(CGRectGetWidth(window.frame)-80, CGRectGetHeight(window.frame)-80, 80, 80)
 
 #define cell_cornerRadius 2
 #define cell_width 310

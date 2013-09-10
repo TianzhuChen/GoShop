@@ -135,6 +135,7 @@
     currentFirstMenuItemIndex=menuItemIndexNew;
     
     
+    //触摸背景
     UITapGestureRecognizer *tap3=[[UITapGestureRecognizer alloc] initWithTarget:self
                                                                         action:@selector(backgroundViewTap:)];
     backgroundView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
@@ -193,7 +194,6 @@
             }
         }
     }
-
 }
 #pragma mark 显示菜单
 -(void)showMenu:(MenuItemEnum)menuIndex{

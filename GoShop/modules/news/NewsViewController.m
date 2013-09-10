@@ -73,9 +73,11 @@
     if([keyPath isEqualToString:@"weiboData"])
     {
         [self.tableView reloadData];
+        [self updateTableVisibleCellImage];
 //        NSLog(@"weibodata>>>>%@",newsController.weiboControl.friendsWeibos);
     }
 }
+#pragma mark -
 #pragma mark SwitchControllerBaseDelegate
 -(SwitchControllerBase *)switchControllerOfNext:(SwitchMoveInfo)moveInfo{
     

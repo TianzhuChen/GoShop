@@ -12,10 +12,12 @@
 @interface Menu(){
     CGPoint beganPoint;
     NSTimeInterval beganTimeInterval;
-    //成功开始位置
+    //可触发显示位置
     CGRect beganRect;
+    //夹角范围触发
     CGFloat minAngle;
     CGFloat maxAngle;
+    
     BOOL isInBeganRect;
     UIWindow *window;
 }
@@ -28,10 +30,13 @@
     if(self){
        
         window=[UIApplication sharedApplication].keyWindow;
+        //触发显示菜单
         UIPanGestureRecognizer *pan=[[UIPanGestureRecognizer alloc] initWithTarget:self
                                                                             action:@selector(panWindow:)];
         pan.delegate=self;
         [window addGestureRecognizer:pan];
+        
+        
         beganRect=LIMIT_CGRECT;//CGRectMake(CGRectGetWidth(window.frame)-35, CGRectGetHeight(window.frame)-35, 35, 35);
         
         minAngle=M_PI_2*0.2;
@@ -50,7 +55,8 @@
     return self;
 }
 
--(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
+shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
 //   
 //    CGPoint point=[gestureRecognizer locationInView:window];
 //    if(CGRectContainsPoint(beganRect, point)){
@@ -74,12 +80,12 @@
     [_menuView showMenu:0];
     [window bringSubviewToFront:_menuView];
 }
-
+#pragma mark -
+#pragma mark window pan gesture 触发
 -(void)panWindow:(UIPanGestureRecognizer *)pan{
     if(_menuView.isShowing){
         return;
     }
-    
     CGPoint point=[pan locationInView:window];
 //    NSLog(@"frame>>%@|||%@",NSStringFromCGRect(beganRect),NSStringFromCGPoint(point));
     if(pan.state==UIGestureRecognizerStateBegan){
@@ -115,7 +121,6 @@
     CGFloat x=beganPoint.x-point.x;
     CGFloat y=beganPoint.y-point.y;
     CGFloat angle=atan2f(y, x);
-    NSLog(@"angle>>>%f",angle);
 //    CGFloat timeOften=[NSDate timeIntervalSinceReferenceDate]-beganTimeInterval;
     CGFloat length=sqrtf((beganPoint.x-point.x)*(beganPoint.x-point.x)+(beganPoint.y-point.y)*(beganPoint.y-point.y));
     if(angle>minAngle && angle<maxAngle && length<100 && length>40){
