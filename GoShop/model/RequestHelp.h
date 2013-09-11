@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface RequestHelp : NSObject
-+(NSString *)getRequestWithData:(NSDictionary *)data baseUrl:(NSString *)baseUrl;
++(NSString *)getRequestUrlWithParams:(NSDictionary *)data baseUrl:(NSString *)baseUrl;
 @end

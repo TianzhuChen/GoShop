@@ -806,20 +806,6 @@
 			path = weibocoretext;
 			sourceTree = "<group>";
 		};
-		FC50C06817D9AAB700F1D0AD /* news */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = news;
-			sourceTree = "<group>";
-		};
-		FC50C06917D9B48800F1D0AD /* account */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = account;
-			sourceTree = "<group>";
-		};
 		FC69E056177D832B00062C65 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -984,8 +970,6 @@
 		FC8A8A2D178D4603007E8FDE /* modelAndControl */ = {
 			isa = PBXGroup;
 			children = (
-				FC50C06917D9B48800F1D0AD /* account */,
-				FC50C06817D9AAB700F1D0AD /* news */,
 				FC9C88BB17C5ECD00048217A /* allWeibo */,
 				FC42EC5617C5C20300930EBE /* DataManager.h */,
 				FC42EC5717C5C20300930EBE /* DataManager.m */,

@@ -69,7 +69,7 @@ NSDictionary *userInfo;
         NSString *str;
         NSDictionary *dic=@{keySinaAccessToken:[userOAuthorInfo objectForKey:keySinaAccessToken],
                             keySinaUserUID:[userOAuthorInfo objectForKey:keySinaUserUID]};
-        str=[RequestHelp getRequestWithData:dic baseUrl:@"https://api.weibo.com/2/users/show.json"];
+        str=[RequestHelp getRequestUrlWithParams:dic baseUrl:@"https://api.weibo.com/2/users/show.json"];
         NSMutableURLRequest *request=[[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:str]];
         [NSURLConnection sendAsynchronousRequest:request queue:requestQueue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         }];
@@ -87,7 +87,7 @@ long long int since_i=0;//比since_id时间晚的微博），默认为0
     NSDictionary *dic=@{keySinaAccessToken:[userOAuthorInfo objectForKey:keySinaAccessToken],
                         keySinaUserUID:[userOAuthorInfo objectForKey:keySinaUserUID],
                         @"since_i":[NSString stringWithFormat:@"%lld",since_i]};
-    str=[RequestHelp getRequestWithData:dic baseUrl:@"https://api.weibo.com/2/statuses/friends_timeline.json"];
+    str=[RequestHelp getRequestUrlWithParams:dic baseUrl:@"https://api.weibo.com/2/statuses/friends_timeline.json"];
 
     NSMutableURLRequest *request=[[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:str]];
     return request;

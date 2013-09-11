@@ -9,7 +9,7 @@
 #import "RequestHelp.h"
 
 @implementation RequestHelp
-+(NSString *)getRequestWithData:(NSDictionary *)data baseUrl:(NSString *)baseUrl
++(NSString *)getRequestUrlWithParams:(NSDictionary *)data baseUrl:(NSString *)baseUrl
 {
     NSMutableArray *paramsArr=[NSMutableArray arrayWithCapacity:data.count];
     for(NSString *key in [data keyEnumerator]){

@@ -29,7 +29,6 @@
 +(ViewControllerManager *)sharedInstance{
     static dispatch_once_t  onceToken;
     static ViewControllerManager *instance;
-    
     dispatch_once(&onceToken, ^{
         instance = [[ViewControllerManager alloc] init];
     });
