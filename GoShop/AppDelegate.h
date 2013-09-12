@@ -10,6 +10,7 @@
 #import "ViewControllerManager.h"
 #import "Menu.h"
 #import "DataManager.h"
+#import "APService.h"
 
 @class NewsViewController;
 

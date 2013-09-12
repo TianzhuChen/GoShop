@@ -217,6 +217,11 @@
 		FC9C88C617C5FF6E0048217A /* skype.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9C88C517C5FF6E0048217A /* skype.png */; };
 		FC9C88C817C5FF7D0048217A /* whatsapp.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9C88C717C5FF7D0048217A /* whatsapp.png */; };
 		FCC73B21178EACE4003B6C41 /* userFace.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC73B20178EACE4003B6C41 /* userFace.png */; };
+		FCF104CA17E15D730028D6E3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF104C917E15D730028D6E3 /* CoreTelephony.framework */; };
+		FCF104CC17E15D800028D6E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF104CB17E15D800028D6E3 /* SystemConfiguration.framework */; };
+		FCF104CE17E160480028D6E3 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCF104CD17E160480028D6E3 /* PushConfig.plist */; };
+		FCF104D317E160A00028D6E3 /* libPushSDK-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF104D117E160A00028D6E3 /* libPushSDK-Simulator.a */; };
+		FCF104D417E160A00028D6E3 /* libPushSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF104D217E160A00028D6E3 /* libPushSDK.a */; };
 		FCF7F25D17DF1C7300005A40 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F25617DF1C7300005A40 /* Menu.m */; };
 		FCF7F25E17DF1C7300005A40 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F25817DF1C7300005A40 /* MenuItem.m */; };
 		FCF7F25F17DF1C7300005A40 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7F25A17DF1C7300005A40 /* MenuView.m */; };
@@ -498,6 +503,12 @@
 		FC9C88C517C5FF6E0048217A /* skype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skype.png; sourceTree = "<group>"; };
 		FC9C88C717C5FF7D0048217A /* whatsapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whatsapp.png; sourceTree = "<group>"; };
 		FCC73B20178EACE4003B6C41 /* userFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userFace.png; sourceTree = "<group>"; };
+		FCF104C917E15D730028D6E3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FCF104CB17E15D800028D6E3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FCF104CD17E160480028D6E3 /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
+		FCF104D017E160A00028D6E3 /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
+		FCF104D117E160A00028D6E3 /* libPushSDK-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-Simulator.a"; sourceTree = "<group>"; };
+		FCF104D217E160A00028D6E3 /* libPushSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPushSDK.a; sourceTree = "<group>"; };
 		FCF7F25517DF1C7300005A40 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		FCF7F25617DF1C7300005A40 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		FCF7F25717DF1C7300005A40 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
@@ -553,6 +564,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF104CC17E15D800028D6E3 /* SystemConfiguration.framework in Frameworks */,
+				FCF104CA17E15D730028D6E3 /* CoreTelephony.framework in Frameworks */,
 				FC2D1F2317D88F1B00B62528 /* libicucore.dylib in Frameworks */,
 				FC26C3EB17C76C1D000BBEF5 /* libz.1.1.3.dylib in Frameworks */,
 				B429919C17C0A2B600F7C7F6 /* CoreText.framework in Frameworks */,
@@ -567,6 +580,8 @@
 				FC823CE5176454C70056CCAF /* Foundation.framework in Frameworks */,
 				FC823CE7176454C70056CCAF /* CoreGraphics.framework in Frameworks */,
 				FC9C88B917C5EBD40048217A /* libWeiboSDK.a in Frameworks */,
+				FCF104D317E160A00028D6E3 /* libPushSDK-Simulator.a in Frameworks */,
+				FCF104D417E160A00028D6E3 /* libPushSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +591,6 @@
 		B433C1EF176C305F0077F0FE /* control */ = {
 			isa = PBXGroup;
 			children = (
-				FC50C06717D9A6E500F1D0AD /* weibocoretext */,
 				FC350CA91794F9F000F19B50 /* audio */,
 				B433C1F0176C30940077F0FE /* Help.h */,
 				B433C1F1176C30940077F0FE /* Help.m */,
@@ -799,13 +813,6 @@
 			name = audio;
 			sourceTree = "<group>";
 		};
-		FC50C06717D9A6E500F1D0AD /* weibocoretext */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = weibocoretext;
-			sourceTree = "<group>";
-		};
 		FC69E056177D832B00062C65 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,6 +871,8 @@
 		FC823CE1176454C70056CCAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCF104CB17E15D800028D6E3 /* SystemConfiguration.framework */,
+				FCF104C917E15D730028D6E3 /* CoreTelephony.framework */,
 				FC2D1F2217D88F1B00B62528 /* libicucore.dylib */,
 				FC26C3EA17C76C1D000BBEF5 /* libz.1.1.3.dylib */,
 				B429919B17C0A2B600F7C7F6 /* CoreText.framework */,
@@ -898,6 +907,7 @@
 		FC823CE9176454C70056CCAF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FCF104CD17E160480028D6E3 /* PushConfig.plist */,
 				B431DB78177886FA00471276 /* Global.h */,
 				FC823D16176462D80056CCAF /* Icon.png */,
 				FC823D14176462D40056CCAF /* Icon@2x.png */,
@@ -915,6 +925,7 @@
 		FC823D05176455030056CCAF /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				FCF104CF17E160A00028D6E3 /* JPush */,
 				FC2D1F1E17D88EFA00B62528 /* RegexKitLite */,
 				FC26C3EC17C76DF2000BBEF5 /* jsonkit */,
 				FC9C88B517C5EBD40048217A /* libWeiboSDK */,
@@ -1014,6 +1025,16 @@
 			);
 			name = baseview;
 			path = controller;
+			sourceTree = "<group>";
+		};
+		FCF104CF17E160A00028D6E3 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				FCF104D017E160A00028D6E3 /* APService.h */,
+				FCF104D117E160A00028D6E3 /* libPushSDK-Simulator.a */,
+				FCF104D217E160A00028D6E3 /* libPushSDK.a */,
+			);
+			path = JPush;
 			sourceTree = "<group>";
 		};
 		FCF7F25017DF1B4400005A40 /* modules */ = {
@@ -1345,6 +1366,7 @@
 				FCF7F28817DF1D4600005A40 /* AccountViewController.xib in Resources */,
 				FCF7F29D17DF239F00005A40 /* WeiboViewController.xib in Resources */,
 				FCF7F2A217DF23C200005A40 /* GoodViewController.xib in Resources */,
+				FCF104CE17E160480028D6E3 /* PushConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1489,6 +1511,7 @@
 		FC823D03176454C70056CCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wei fang (45U4RMHVTT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoShop/GoShop-Prefix.pch";
 				INFOPLIST_FILE = "GoShop/GoShop-Info.plist";
@@ -1496,9 +1519,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/libWeiboSDK\"",
+					"\"$(SRCROOT)/libs/JPush\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BA7E0776-D7FB-4421-B112-A327A0E1773A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1514,6 +1539,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/libWeiboSDK\"",
+					"\"$(SRCROOT)/libs/JPush\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

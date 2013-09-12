@@ -13,7 +13,7 @@
 {
     self=[super init];
     if(self)
-    {//sdfs
+    {
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(didReceiveMemeory)
                                                      name:UIApplicationDidReceiveMemoryWarningNotification
