@@ -9,26 +9,28 @@
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
 #import "UIWindow+MenuWindow.h"
+#import "SwitchControllerDelegate.h"
 
-typedef enum {
-    HORIZONTAL,
-    VERTICAL,
-}SwitchDirection;
 
-typedef struct{
-    CGPoint beganPoint;
-    CGPoint currentPoint;
-    NSTimeInterval beganTimeInterval;
-    SwitchDirection direction;
-}SwitchMoveInfo;
+//typedef enum {
+//    HORIZONTAL,
+//    VERTICAL,
+//}SwitchDirection;
+//
+//typedef struct{
+//    CGPoint beganPoint;
+//    CGPoint currentPoint;
+//    NSTimeInterval beganTimeInterval;
+//    SwitchDirection direction;
+//}SwitchMoveInfo;
+//
+//@protocol SwitchControllerDelegate;
 
-@protocol SwitchControllerBaseDelegate;
-
-@interface SwitchControllerBase : BaseViewController<SwitchControllerBaseDelegate,UIGestureRecognizerDelegate>{
+@interface SwitchControllerBase : BaseViewController<SwitchControllerDelegate,UIGestureRecognizerDelegate>{
 //    UIWindow *window;
 //    UIImage *lastPageScreenshot;
 }
-@property (nonatomic,weak) id<SwitchControllerBaseDelegate> switchDelegate;
+@property (nonatomic,weak) id<SwitchControllerDelegate> switchDelegate;
 @property (nonatomic,weak) UIWindow *window;
 //是否支持水平方向
 @property (nonatomic) BOOL isSupportHorizontalMove;
@@ -59,19 +61,19 @@ typedef struct{
 
 @end
 
-@protocol SwitchControllerBaseDelegate <NSObject>
-
-@optional
-//返回下一个controller
--(SwitchControllerBase *)switchControllerOfNext:(SwitchMoveInfo )moveInfo;
-//返回旧的controller
--(SwitchControllerBase *)switchControllerOfPrevious:(SwitchMoveInfo )moveInfo;
-
--(void)switchNextStart:(SwitchMoveInfo )moveInfo;
--(void)switchNextCancelled:(SwitchMoveInfo )moveInfo;
--(void)switchNextCompleted:(SwitchMoveInfo )moveInfo;
--(void)switchPreviousCancelled:(SwitchMoveInfo )moveInfo;
--(void)switchPreviousCompleted:(SwitchMoveInfo )moveInfo;
--(void)switchPreviousStart:(SwitchMoveInfo )moveInfo;
-
-@end
+//@protocol SwitchControllerDelegate <NSObject>
+//
+//@optional
+////返回下一个controller
+//-(SwitchControllerBase *)switchControllerOfNext:(SwitchMoveInfo )moveInfo;
+////返回旧的controller
+//-(SwitchControllerBase *)switchControllerOfPrevious:(SwitchMoveInfo )moveInfo;
+//
+//-(void)switchNextStart:(SwitchMoveInfo )moveInfo;
+//-(void)switchNextCancelled:(SwitchMoveInfo )moveInfo;
+//-(void)switchNextCompleted:(SwitchMoveInfo )moveInfo;
+//-(void)switchPreviousCancelled:(SwitchMoveInfo )moveInfo;
+//-(void)switchPreviousCompleted:(SwitchMoveInfo )moveInfo;
+//-(void)switchPreviousStart:(SwitchMoveInfo )moveInfo;
+//
+//@end

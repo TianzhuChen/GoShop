@@ -80,7 +80,7 @@
     }
     
     controller.horizontalPreviousController=_currentController;
-    [_currentController pushController:controller direction:HORIZONTAL];
+    [_currentController pushController:controller direction:kMoveDirectionLeft];
     self.currentController=controller;
 }
 

@@ -13,7 +13,7 @@
 #define BOTTOM_EDAGE 640
 #define VIEW_MIN_SCALE 0.95
 #define FAST_TAP 300
- 
+
 @interface SwitchControllerBase(){
     UIPanGestureRecognizer *panGesture;
     //限制范围(避免和右下角的菜单手势冲突)
@@ -186,7 +186,7 @@ static int moveInitNumbers=0;
         previousPoint=movePoint;
         if(fabsf(beganPoint.x-movePoint.x)>fabsf(beganPoint.y-movePoint.y)){//横向移动
             isLandscapeMove=YES;
-            moveInfo.direction=HORIZONTAL;
+            moveInfo.direction=kMoveDirectionLeft;
             if(beganPoint.x>movePoint.x){//判断第一次横向移动方向
                 isToLeft=YES;
             }else{
@@ -194,7 +194,7 @@ static int moveInitNumbers=0;
             }
         }else{//垂直移动
             isLandscapeMove=NO;
-            moveInfo.direction=VERTICAL;
+            moveInfo.direction=kMoveDirectionUp;
             if(beganPoint.y>movePoint.y){
                 isToUp=YES;
             }else{
@@ -587,7 +587,7 @@ static int moveInitNumbers=0;
 }
 
 -(void)pushController:(SwitchControllerBase *)controller direction:(SwitchDirection)direction{
-    if(direction==HORIZONTAL){
+    if(direction==kMoveDirectionLeft){
 //        controller.horizontalPreviousController=self;
         controller.view.frame=controller.defaultFrameOfNextHor;
 //        [window insertSubview:controller.view aboveSubview:self.view];

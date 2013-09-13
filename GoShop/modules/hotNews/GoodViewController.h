@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SwitchControllerBase.h"
 
-@interface GoodViewController : SwitchControllerBase<SwitchControllerBaseDelegate>
+@interface GoodViewController : SwitchControllerBase<SwitchControllerDelegate>
 
 @end
