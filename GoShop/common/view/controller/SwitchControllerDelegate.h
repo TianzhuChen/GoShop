@@ -22,14 +22,16 @@ typedef struct{
 }SwitchMoveInfo;
 
 @class SwitchControllerBase;
+@class SwitchPageController;
 
 @protocol SwitchControllerDelegate <NSObject>
 
 @optional
+//请更改为SwitchPageController
 //返回下一个controller
--(SwitchControllerBase *)switchControllerOfNext:(SwitchMoveInfo )moveInfo;
+-(id)switchControllerOfNext:(SwitchMoveInfo )moveInfo;
 //返回旧的controller
--(SwitchControllerBase *)switchControllerOfPrevious:(SwitchMoveInfo )moveInfo;
+-(id)switchControllerOfPrevious:(SwitchMoveInfo )moveInfo;
 
 -(BOOL)switchNextStart:(SwitchMoveInfo )moveInfo;
 -(void)switchNextCancelled:(SwitchMoveInfo )moveInfo;
@@ -37,4 +39,10 @@ typedef struct{
 -(void)switchPreviousCancelled:(SwitchMoveInfo )moveInfo;
 -(void)switchPreviousCompleted:(SwitchMoveInfo )moveInfo;
 -(BOOL)switchPreviousStart:(SwitchMoveInfo )moveInfo;
+/*****新版接口*****/
+//如果返回yes将会切换页面；如果返回no不会切换页面，终止后面的所有动作，默认Yes。
+-(BOOL)switchWillStart:(SwitchMoveInfo)moveInfo;
+-(void)switchStart:(SwitchMoveInfo)moveInfo;
+-(void)switchCancel:(SwitchMoveInfo)moveInfo;
+-(void)switchCompleted:(SwitchMoveInfo)moveInfo;
 @end

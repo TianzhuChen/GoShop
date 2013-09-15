@@ -24,7 +24,7 @@ static int statusBarGap=3;
 +(UIView *)getTitleViewWithTitle:(NSString *)title withBackgroundColor:(UIColor *)color{
     CGSize strSize=[title sizeWithFont:[UIFont systemFontOfSize:18]
                               constrainedToSize:CGSizeMake(320-5, 2000)
-                         lineBreakMode:UILineBreakModeCharacterWrap];
+                         lineBreakMode:NSLineBreakByCharWrapping];
     //标题文本框
     UILabel *label=[[UILabel alloc] init];
     if(strSize.height>44){
@@ -43,7 +43,7 @@ static int statusBarGap=3;
     label.text=title;
     label.backgroundColor=[UIColor clearColor];
     
-    UIView *titleBg=[[UIView alloc] initWithFrame:CGRectMake(5, statusBarGap, width, strSize.height)];
+    UIView *titleBg=[[UIView alloc] initWithFrame:CGRectMake(5, statusBarGap+CGRectGetHeight([UIApplication sharedApplication].statusBarFrame), width, strSize.height)];
     titleBg.backgroundColor=color;
     [titleBg addSubview:label];
     
@@ -64,7 +64,7 @@ static int statusBarGap=3;
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    statusBgFrame.origin.y=-statusBgFrame.size.height;
+    statusBgFrame.origin.y=0;//-statusBgFrame.size.height;
     statusBgFrame.origin.x=-5;
     UIImageView *barBg=[[UIImageView alloc] initWithFrame:statusBgFrame];
     barBg.image=image;

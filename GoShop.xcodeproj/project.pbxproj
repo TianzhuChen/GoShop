@@ -153,6 +153,7 @@
 		B474A06F17DC89F200BE77D1 /* 139@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4749FE217DC89F200BE77D1 /* 139@2x.png */; };
 		B474A07017DC89F200BE77D1 /* 140@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4749FE317DC89F200BE77D1 /* 140@2x.png */; };
 		B474A07117DC89F200BE77D1 /* 141@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4749FE417DC89F200BE77D1 /* 141@2x.png */; };
+		B4D2A22817E4A0770080C7D1 /* GoShopHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D2A22717E4A0770080C7D1 /* GoShopHelp.m */; };
 		FC088D6B17E2AEFD00E6132F /* CTZUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC088D6117E2AEFD00E6132F /* CTZUITableView.m */; };
 		FC088D6C17E2AEFD00E6132F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC088D6317E2AEFD00E6132F /* BaseViewController.m */; };
 		FC088D6D17E2AEFD00E6132F /* SwitchControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC088D6617E2AEFD00E6132F /* SwitchControllerBase.m */; };
@@ -399,6 +400,8 @@
 		B4749FE217DC89F200BE77D1 /* 139@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "139@2x.png"; sourceTree = "<group>"; };
 		B4749FE317DC89F200BE77D1 /* 140@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "140@2x.png"; sourceTree = "<group>"; };
 		B4749FE417DC89F200BE77D1 /* 141@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "141@2x.png"; sourceTree = "<group>"; };
+		B4D2A22617E4A0770080C7D1 /* GoShopHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoShopHelp.h; sourceTree = "<group>"; };
+		B4D2A22717E4A0770080C7D1 /* GoShopHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoShopHelp.m; sourceTree = "<group>"; };
 		FC088D6017E2AEFD00E6132F /* CTZUITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTZUITableView.h; sourceTree = "<group>"; };
 		FC088D6117E2AEFD00E6132F /* CTZUITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTZUITableView.m; sourceTree = "<group>"; };
 		FC088D6217E2AEFD00E6132F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -743,6 +746,8 @@
 		FC088D4B17E2AE6E00E6132F /* common */ = {
 			isa = PBXGroup;
 			children = (
+				B4D2A22617E4A0770080C7D1 /* GoShopHelp.h */,
+				B4D2A22717E4A0770080C7D1 /* GoShopHelp.m */,
 				FC088D8417E2AF3D00E6132F /* control */,
 				FC088D7017E2AF3700E6132F /* model */,
 				FC088D5E17E2AEFD00E6132F /* view */,
@@ -944,9 +949,9 @@
 		FC823CE8176454C70056CCAF /* GoShop */ = {
 			isa = PBXGroup;
 			children = (
-				FC088D4B17E2AE6E00E6132F /* common */,
 				FC823CF1176454C70056CCAF /* AppDelegate.h */,
 				FC823CF2176454C70056CCAF /* AppDelegate.m */,
+				FC088D4B17E2AE6E00E6132F /* common */,
 				FCF7F25017DF1B4400005A40 /* modules */,
 				FC823CE9176454C70056CCAF /* Supporting Files */,
 			);
@@ -1409,6 +1414,7 @@
 				FCF7F27917DF1D1500005A40 /* MusicListView.m in Sources */,
 				FCF7F28417DF1D4600005A40 /* AccountItem1Cell.m in Sources */,
 				FCF7F28617DF1D4600005A40 /* AccountItem2Cell.m in Sources */,
+				B4D2A22817E4A0770080C7D1 /* GoShopHelp.m in Sources */,
 				FCF7F28717DF1D4600005A40 /* AccountViewController.m in Sources */,
 				FCF7F28917DF1D4600005A40 /* LoginView.m in Sources */,
 				FCF7F28E17DF1DDF00005A40 /* NewsControl.m in Sources */,
